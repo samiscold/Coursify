@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Neogrotesk Ess Alt';
-    src: url('/assets/fonts/NeogroteskEssAlt-Black.eot');
-    src: local('Neogrotesk Ess Alt Black'), local('NeogroteskEssAlt-Black'),
-        url('/assets/fonts/NeogroteskEssAlt-Black.otf') format('embedded-opentype'),
-        url('/assets/fonts/NeogroteskEssAlt-Black.woff2') format('woff2'),
-        url('/assets/fonts/NeogroteskEssAlt-Black.woff') format('woff')
-}
-
-
 
 html {
     scroll-behavior: smooth;
