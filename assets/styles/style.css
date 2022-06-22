@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* INTRO */
+
+.coursify-section-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #ffab66 0%, #ee6001 20%, #faa433 40%, #ffc07c 60%, #ffc266 80%, #ffd2ba 100%);
+    animation: gradient 2s backwards;
+    background-size: 600%;
+    background-position: 0% 100%;
+}
+
+.coursify-section-intro h1 {
+    font-weight: bolder;
+    font-size: 72px;
+    font-family: Neogrotesk Ess Alt Black;
+    animation: coursify-heading 0.5s linear forwards;
+    animation-delay: 1.5s;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(-45deg, #ffab66 0%, #ee6001 20%, #ffffff 40%, #ffc07c 60%, #ffd2ba 80%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    background-position: 0% 100%;
+}
+
+.coursify-section-intro p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    animation: coursify-paragraph 0.5s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
+
+}
+
+.coursify-section-intro button {
+    margin: 20px 0;
+    padding: 0;
+    animation: coursify-paragraph 0.5s linear forwards;
+    animation-delay: 2.2s;
+    opacity: 0;
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.text-top {
+    animation: 500ms showTopText forwards;
+    color: white;
+    animation-delay: 2s;
+    position:absolute;
+    bottom:0px;
+    opacity:0;
+}
+
+.intro-footer {
+   display: flex;
+   justify-content: center;
+}
+
+
+/* ANIMACIONET */
+
+@keyframes gradient {
+    50% {
+        background-position: 100%;
+    }
+
+}
+
+@keyframes coursify-heading {
+
+
+    100% {
+        background: white;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: white;
+        transform: scale(1.01);
+    }
+}
+
+@keyframes coursify-paragraph {
+
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes showTopText {
+    0% {
+        opacity:1;
+        bottom:0;
+    }
+
+
+    100% {
+        opacity:1;
+        bottom:20px;
+    }
+}
