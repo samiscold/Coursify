@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "negro";
+    src: url("/assets/fonts/NeogroteskEssAlt-Black.otf");
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,6 +11,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 
 
 /* INTRO */
@@ -29,7 +36,7 @@ body {
 .coursify-section-intro h1 {
     font-weight: bolder;
     font-size: 72px;
-    font-family: Neogrotesk Ess Alt Black;
+    font-family: "negro";
     animation: coursify-heading 0.5s linear forwards;
     animation-delay: 1.5s;
     margin: 0;
@@ -80,6 +87,9 @@ body {
    display: flex;
    justify-content: center;
 }
+
+
+
 
 
 /* ANIMACIONET */
