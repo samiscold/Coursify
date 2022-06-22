@@ -1,12 +1,11 @@
 @font-face {
-    font-family: 'Neogrotesk Ess Alt';
-    src: url('/assets/fonts/NeogroteskEssAlt-Black.eot');
-    src: local('Neogrotesk Ess Alt Black'), local('NeogroteskEssAlt-Black'),
-        url('/assets/fonts/NeogroteskEssAlt-Black.otf') format('embedded-opentype'),
-        url('/assets/fonts/NeogroteskEssAlt-Black.woff2') format('woff2'),
-        url('/assets/fonts/NeogroteskEssAlt-Black.woff') format('woff')
-}
+    font-family: 'neogrotesk_ess_altblack';
+    src: url('/assets/fonts/NeogroteskEssAlt-Black.woff2') format('woff2'),
+         url('/assets/fonts/NeogroteskEssAlt-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 
 html {
@@ -42,7 +41,8 @@ body {
 .coursify-section-intro h1 {
     font-weight: bolder;
     font-size: 72px;
-    font-family: "Neogrotesk Ess Alt";
+    font-family: "neogrotesk_ess_altblack";
+    font-family: neogrotesk_ess_altblack;
     animation: coursify-heading 0.5s linear forwards;
     animation-delay: 1.5s;
     margin: 0;
