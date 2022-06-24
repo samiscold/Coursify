@@ -1,0 +1,14 @@
+{
+  "name": "interactive-spheres-copy",
+  "version": "1.0.0",
+  "description": "Scene exported with Spline",
+  "scripts": {
+    "start": "serve"
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
+  },
+  "dependencies": {
+    "@splinetool/runtime": "^0.9.69"
+  }
+}
