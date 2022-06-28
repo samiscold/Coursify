@@ -1,3 +1,4 @@
+
 function buttonContinue() {
     let x = document.getElementById("intro-section");
     x.style.transform = 'translate(0,-100%)'
@@ -21,27 +22,9 @@ navToggle.addEventListener("click", function () {
     navWrapper.classList.add("active");
     this.setAttribute("aria-label", "close menu");
     this.setAttribute("aria-expanded", "true");
-    searchForm.classList.remove("active");
-    searchToggle.classList.remove("active");
   }
 });
 
-let searchToggle = document.querySelector(".search__toggle");
-let searchForm = document.querySelector(".search__form");
 
-searchToggle.addEventListener("click", showSearch);
 
-function showSearch() {
-  searchForm.classList.toggle("active");
-  searchToggle.classList.toggle("active");
 
-  navToggle.setAttribute("aria-expanded", "false");
-  navToggle.setAttribute("aria-label", "menu");
-  navWrapper.classList.remove("active");
-
-  if (searchToggle.classList.contains("active")) {
-    searchToggle.setAttribute("aria-label", "Close search");
-  } else {
-    searchToggle.setAttribute("aria-label", "Open search");
-  }
-}
