@@ -63,4 +63,13 @@
       transform: translateY(0%);
     }
   }
+
+  .slideshow-container {
+    margin-top: -25px;
+    height: 500px;
+  }
+
+  .slideshow-container img {
+    height: 500px;
+  }
 }
