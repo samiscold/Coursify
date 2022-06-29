@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
   <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/style-responsive.css">
   <title>Coursify - Learn new skills everyday</title>
 </head>
 
@@ -16,7 +18,7 @@
   <body>
 
 
-    <header class="site-header">
+    <!-- <header class="site-header">
       <div class="site-header__top">
         <div class="wrapper site-header__wrapper">
           <div class="site-header__start">
@@ -55,9 +57,55 @@
           </div>
         </div>
       </div>
+    </header> -->
+
+    <!-- Nav Bar Menu -->
+    <header>
+      <nav class="menu-bar width-page" id="myTopnav">
+        <div class="brand-logo">
+          <a href="index.html">COURSIFY</a>
+        </div>
+        <div class="menus">
+          <ul>
+            <li><a href="">Courses</a> </li>
+            <li><a href="">Project</a> </li>
+            <li><a href="">Blog</a> </li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <i class="fa fa-search">
+          </i>
+          <input type="search" placeholder="Search">
+        </div>
+        <div class="user">
+          <p>
+          <i class="fa fa-user"></i>
+          Welcome,
+          <label class="username">haxhimustafa</label>
+          </p>
+        </div>
+
+        <!-- Hamburger menu -->
+        <nav class="hamburger-icon" onclick="showMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <nav class="respo-menus">
+            <ul>
+              <li><a href="">Courses</a> </li>
+              <li><a href="">Project</a> </li>
+              <li><a href="">Blog</a> </li>
+            </ul>
+          </nav>
+        </nav>
+        <!--  -->
+      </nav>
+
+      
     </header>
 
-    <main>
+
+    <main class="width-page">
        <section>
       <p>1.Projekti duhet ti kete se paku 3 persona ne grup </p>
       <p>2.Te perdoret GIT per version control ( minimum 3 commits per person)</p>
