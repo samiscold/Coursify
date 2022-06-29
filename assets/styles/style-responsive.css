@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1200px) {
+  .search-bar {
+    width: 200px !important;
+  }
+
+  .search-bar::placeholder {
+    color: red;
+  }
+
+  .user {
+    max-width: 150px !important;
+  }
+
+  .menus {
+    width: 500px !important;
+    margin-left: -40px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  header nav .menus,
+  header nav .user {
+    display: none;
+  }
+
+  header {
+    margin-bottom: 22px;
+  }
+
+  .search-bar {
+    margin-left: 15px;
+    width: 1400px !important;
+  }
+
+  .hamburger-icon {
+    display: block;
+    margin-top: 7px;
+    margin-left: 40px;
+  }
+
+  .respo-menus {
+    margin: 0 auto;
+    animation: moveFromTop 300ms ease-in-out;
+  }
+
+  .respo-menus a:hover {
+    color: #ee6001;
+  }
+
+  .respo-menus ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+  }
+
+  @keyframes moveFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-200%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
