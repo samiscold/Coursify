@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1400px) {
+  .courses .course-box {
+    width: 30%;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .search-bar {
     width: 200px !important;
@@ -14,6 +20,10 @@
   .menus {
     width: 500px !important;
     margin-left: -40px;
+  }
+
+  .courses .course-box {
+    width: 40%;
   }
 }
 
@@ -71,5 +81,16 @@
 
   .slideshow-container img {
     height: 500px;
+  }
+
+  .courses .course-box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .course-box p {
+    height: 100px;
+    max-height: 100px;
   }
 }

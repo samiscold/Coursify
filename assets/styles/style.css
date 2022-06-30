@@ -262,6 +262,139 @@ header {
   }
 }
 
+/* *************** */
+/* Dark Light Mode */
+/* *************** */
+
+main.dark-mode button {
+  color: #ee6001;
+  border: 1px solid #ee6001;
+  background-color: transparent;
+  padding: 5px 15px;
+}
+
+main.light-mode button {
+  color: #ee6001;
+  border: 1px solid #ee6001;
+  background-color: transparent;
+  padding: 5px 15px;
+}
+
+main.dark-mode {
+  background-color: #222;
+}
+
+main.dark-mode .course-box {
+  background-color: black;
+}
+
+main.dark-mode h6,
+main.dark-mode .student,
+main.dark-mode .start-learning a button {
+  color: white;
+}
+main.dark-mode .start-learning a button {
+  border: 1px solid white;
+}
+
+/* ************ */
+/* Courses Card */
+/* ************ */
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.courses .course-box {
+  position: relative;
+  width: 22%;
+  height: 500px;
+  max-height: 500px;
+  /* background-color: black; */
+  margin-left: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+.course-box .image img {
+  width: 100%;
+  height: 150px;
+  max-height: 150px;
+  /* border-radius: 20px 20px 0 0; */
+}
+
+.course-box .image label {
+  position: absolute;
+  z-index: 2;
+  background-color: #ee6001;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 10px;
+}
+
+.course-box .image i {
+  position: absolute;
+  left: 48%;
+  top: 12%;
+  color: white;
+  font-size: 30px;
+}
+
+.course-box h3 {
+  margin: 20px 30px;
+  color: #ee6001;
+}
+
+.course-box h6 {
+  color: black;
+  margin: -10px 30px;
+}
+
+.course-box p {
+  font-size: 13px;
+  margin: 20px 30px;
+  color: #999;
+  height: 130px;
+  max-height: 130px;
+}
+
+.course-box .student {
+  margin: 20px 30px;
+  text-align: center;
+  /* color: white; */
+  /* margin: 0 auto; */
+}
+
+.course-box .student i {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.course-box .start-learning {
+  /* display: inline; */
+  margin: 20px 30px;
+}
+
+.course-box .start-learning a button {
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid black;
+  background-color: transparent;
+  position: relative;
+  color: black;
+}
+
+.course-box .start-learning a button:hover {
+  border: 1px solid #ee6001;
+  color: #ee6001;
+}
+
 /* intro page */
 /* first section */
 
@@ -433,7 +566,7 @@ li {
 main {
   padding: 20px;
   min-height: 100%;
-  margin: 0 auto -50px;
+  background-color: #f2f2f2;
 }
 footer {
   margin-top: 150px;
