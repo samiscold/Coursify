@@ -42,7 +42,12 @@
           <p>
             <i class="fa fa-user"></i>
             Welcome,
-            <label class="username">haxhimustafa</label>
+            <label class="username" id="username">
+              <script>
+                var user = sessionStorage.getItem('username');
+                document.getElementById('username').innerHTML = user;
+              </script>
+            </label>
           </p>
         </div>
 
@@ -126,7 +131,7 @@
 
     <script src="assets/scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/cdf60cb5fd.js" crossorigin="anonymous"></script>
-
+    <script src="assets/scripts/logs.js"></script>
   </body>
 
 </html>
