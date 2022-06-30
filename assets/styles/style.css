@@ -25,6 +25,11 @@ body {
   margin: 0 auto;
 }
 
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+
 /* ******* */
 /* Nav Bar */
 /* ******* */
@@ -257,12 +262,12 @@ header {
   justify-content: center;
 }
 
-iframe {
-    display: block;
-}
+
 
 canvas {
     display: block;
+    width: 100%;
+    height: 100vh;
   }
   
 /* intro page */
@@ -340,6 +345,180 @@ li {
   position: relative;
   background-color: #ffd9ab;
 }
+
+
+/* homepage */
+/* first section */
+
+.home-hero-section-first {
+  width: 100%;
+  height: 50vh;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background:url(/assets/images/coursify-hero.jpg);
+  background-position: center center;
+  object-fit: full;
+}
+
+.home-hero-section-first h1,p,.buttons {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.home-hero-section-first h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2%;
+}
+
+.home-hero-section-first p {
+  font-size: 1.2rem;
+}
+
+.button-primary {
+  border:none;
+  padding:16px 32px;
+  background:#ee6001;
+  margin:2% 0;
+  margin-right: 1%;
+}
+
+.button-secondary {
+  border:none;
+  padding:16px 32px;
+  margin-right: 2%;
+  background:#ffffff;
+  margin-right: 1%;
+
+}
+
+/* navbar music button  */
+
+.musicButton {
+  background: #ee6001;
+  margin:1rem;
+  font-size: 2rem;
+  width: 7rem;
+  opacity: 0.5;
+  color:white;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.musicButton.active {
+  opacity: 1;
+}
+
+/* music icon animation 
+ */
+ .loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#wave {
+  height: 70px;
+  width: 70px;
+  fill: black;
+}
+#wave.red {
+  animation-play-state: paused;
+}
+
+#Line_1 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.15s;
+}
+#Line_2 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.3s;
+}
+#Line_3 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.45s;
+}
+#Line_4 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.6s;
+}
+#Line_5 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.75s;
+}
+#Line_6 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.9s;
+}
+#Line_7 {
+  animation: pulse 1s infinite;
+  animation-delay: 1.05s;
+}
+#Line_8 {
+  animation: pulse 1s infinite;
+  animation-delay: 1.2s;
+}
+#Line_9 {
+  animation: pulse 1s infinite;
+  animation-delay: 1.35s;
+}
+
+#Line_1.red {
+  animation-play-state: paused;
+}
+#Line_2.red {
+  animation-play-state: paused;
+}
+#Line_3.red {
+  animation-play-state: paused;
+}
+#Line_4.red {
+  animation-play-state: paused;
+}
+#Line_5.red {
+  animation-play-state: paused;
+}
+#Line_6.red {
+  animation-play-state: paused;
+}
+#Line_7.red {
+  animation-play-state: paused;
+}
+#Line_8.red {
+  animation-play-state: paused;
+}
+#Line_9.red {
+  animation-play-state: paused;
+}
+
+@for $i from 1 through 9 {
+	#Line_#{$i}.red {
+		animation-play-state: paused;
+	}
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scaleY(1);
+    transform-origin: 50% 50%;
+ }
+  50% {
+    transform: scaleY(0.7);
+    transform-origin: 50% 50%;
+ }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 50% 50%;
+ }
+}
+
+
 
 /* homepage */
 /* footer */

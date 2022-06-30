@@ -9,6 +9,7 @@
     "serve": "^13.0.2"
   },
   "dependencies": {
-    "@splinetool/runtime": "^0.9.69"
+    "@splinetool/runtime": "^0.9.69",
+    "howler": "^2.2.3"
   }
 }

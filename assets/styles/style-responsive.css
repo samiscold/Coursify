@@ -1,4 +1,11 @@
 @media only screen and (max-width: 1200px) {
+
+      /* home section hero  */
+      .home-hero-section-first {
+        background-position: 60%;
+      }
+
+      
   .search-bar {
     width: 200px !important;
   }
@@ -18,6 +25,16 @@
 }
 
 @media only screen and (max-width: 720px) {
+
+    /* home section hero  */
+    .home-hero-section-first {
+      background-position: 70%;
+    }
+
+  
+
+
+
   header nav .menus,
   header nav .user {
     display: none;
@@ -63,4 +80,7 @@
       transform: translateY(0%);
     }
   }
+
+
+
 }
