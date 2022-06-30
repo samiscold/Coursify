@@ -86,6 +86,7 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+// Dark / Light Mode
 function toggleDarkLight() {
   var body = document.getElementById("body");
   var currentClass = body.className;

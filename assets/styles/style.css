@@ -25,9 +25,14 @@ body {
   margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5,h6{
-  margin:0;
-  padding:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 /* ******* */
@@ -293,6 +298,11 @@ main.dark-mode .course-box {
   background-color: black;
 }
 
+main.dark-mode h1,
+main.dark-mode h2,
+main.dark-mode h3,
+main.dark-mode h4,
+main.dark-mode h5,
 main.dark-mode h6,
 main.dark-mode .student,
 main.dark-mode .start-learning a button {
@@ -300,6 +310,10 @@ main.dark-mode .start-learning a button {
 }
 main.dark-mode .start-learning a button {
   border: 1px solid white;
+}
+
+main.expect-from-coursify .dark-mode {
+  background-color: #222;
 }
 
 /* ************ */
@@ -311,6 +325,21 @@ main.dark-mode .start-learning a button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.courses > h3 {
+  display: block;
+  width: 100%;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.courses > h4 {
+  display: block;
+  font-weight: normal;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .courses .course-box {
@@ -398,6 +427,78 @@ main.dark-mode .start-learning a button {
 .course-box .start-learning a button:hover {
   border: 1px solid #ee6001;
   color: #ee6001;
+}
+
+/* ******************** */
+/* expect-from-coursify */
+/* ******************** */
+.expect-from-coursify {
+  text-align: center;
+}
+
+.expect-from-coursify h1 {
+  margin-top: 50px;
+}
+
+.col-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+.efc {
+  margin-top: 50px;
+  height: 60px;
+  max-height: 60px;
+}
+
+.efc i {
+  /* color: #999; */
+  color: #ee6001;
+  font-size: 55px;
+}
+
+.efc i img {
+  width: 70px;
+  height: 70px;
+}
+
+.efc .text {
+  position: absolute;
+  display: inline;
+  width: 43%;
+}
+
+.efc .text h4 {
+  margin-left: 40px;
+  margin-bottom: 10px;
+  /* color: #ee6001; */
+}
+
+.efc .text p {
+  color: #999;
+}
+
+.efc-1 {
+  text-align: left;
+  width: 47%;
+  max-width: 47%;
+  /* height: 100px; */
+  margin: 20px;
+  /* background-color: blue; */
+}
+
+.efc-2 {
+  text-align: left;
+  width: 47%;
+  margin: 20px;
+  /* height: 100px; */
+  /* background-color: blue; */
+}
+
+.efc .fa-bookmark {
+  width: 55px;
 }
 
 /* intro page */
@@ -489,14 +590,12 @@ main.dark-mode .start-learning a button {
   justify-content: center;
 }
 
-
-
 canvas {
-    display: block;
-    width: 100%;
-    height: 100vh;
-  }
-  
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
 /* intro page */
 /* animations */
 
@@ -573,13 +672,11 @@ li {
   background-color: #ffd9ab;
 }
 
-
 main {
   padding: 20px;
   min-height: 100%;
   background-color: #f2f2f2;
 }
-
 
 .home-hero-section-first {
   width: 100%;
@@ -590,12 +687,14 @@ main {
   justify-content: center;
   align-items: center;
   align-self: center;
-  background:url(/assets/images/coursify-hero.jpg);
+  background: url(/assets/images/coursify-hero.jpg);
   background-position: center center;
   object-fit: full;
 }
 
-.home-hero-section-first h1,p,.buttons {
+.home-hero-section-first h1,
+p,
+.buttons {
   width: 85%;
   margin: 0 auto;
 }
@@ -610,25 +709,24 @@ main {
 }
 
 .button-primary {
-  border:none;
-  padding:16px 32px;
-  background:#ee6001;
-  margin:2% 0;
+  border: none;
+  padding: 16px 32px;
+  background: #ee6001;
+  margin: 2% 0;
   margin-right: 1%;
 }
 
 .button-secondary {
-  border:none;
-  padding:16px 32px;
+  border: none;
+  padding: 16px 32px;
   margin-right: 2%;
-  background:#ffffff;
+  background: #ffffff;
   margin-right: 1%;
-
 }
 
 /* header/navbar music icon + animation 
  */
- .loader {
+.loader {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -641,7 +739,6 @@ main {
 #wave.stop {
   animation-play-state: paused;
 }
-
 
 #wave.stop path {
   animation-play-state: paused;
@@ -686,22 +783,20 @@ main {
 
 #Line_1.red {
   animation-play-state: paused;
-  animation:none;
+  animation: none;
 }
 
 @keyframes pulse {
   0% {
     transform: scaleY(1);
     transform-origin: 50% 50%;
- }
+  }
   50% {
     transform: scaleY(0.7);
     transform-origin: 50% 50%;
- }
+  }
   100% {
     transform: scaleY(1);
     transform-origin: 50% 50%;
- }
+  }
 }
-
-

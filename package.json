@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@splinetool/runtime": "^0.9.69",
+    "css.gg": "^2.0.0",
     "howler": "^2.2.3"
   }
 }

@@ -5,13 +5,11 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  /* home section hero  */
+  .home-hero-section-first {
+    background-position: 60%;
+  }
 
-      /* home section hero  */
-      .home-hero-section-first {
-        background-position: 60%;
-      }
-
-      
   .search-bar {
     width: 200px !important;
   }
@@ -32,18 +30,30 @@
   .courses .course-box {
     width: 40%;
   }
+
+  .expect-from-coursify {
+    margin-bottom: 300px;
+  }
+
+  .expect-from-coursify .efc {
+    margin-top: 120px;
+  }
+
+  .efc .text h4 {
+    margin-left: 20px;
+  }
+
+  .efc-1,
+  .efc-2 {
+    margin-top: -40px;
+  }
 }
 
 @media only screen and (max-width: 720px) {
-
-    /* home section hero  */
-    .home-hero-section-first {
-      background-position: 70%;
-    }
-
-  
-
-
+  /* home section hero  */
+  .home-hero-section-first {
+    background-position: 70%;
+  }
 
   header nav .menus,
   header nav .user {
@@ -80,6 +90,10 @@
     margin-right: 40px;
   }
 
+  #body > button {
+    margin-left: 25%;
+  }
+
   @keyframes moveFromTop {
     from {
       opacity: 0;
@@ -103,11 +117,37 @@
   .courses .course-box {
     width: 80%;
   }
+
+  .expect-from-coursify .col-2 {
+    display: block !important;
+  }
+
+  .efc .text {
+    width: 100%;
+  }
+
+  .efc {
+    margin-top: 100px;
+    margin-left: -35px;
+  }
+
+  .efc-2 {
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+
+  .expect-from-coursify {
+    margin-bottom: 900px;
+  }
 }
 
 @media only screen and (max-width: 280px) {
   .course-box p {
     height: 100px;
     max-height: 100px;
+  }
+
+  #body > button {
+    margin-left: 0;
   }
 }
