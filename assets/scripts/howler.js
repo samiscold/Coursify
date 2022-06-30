@@ -14,23 +14,25 @@ var sound = new Howl({
 
   sound.on('load', function() {
 
-     var startButton = document.getElementById('start');
-  startButton.addEventListener('click', function() {
-    this.classList.toggle('active');
+    //  var startButton = document.getElementById('start');
+     var svganim = document.getElementById("wave");
+
+    svganim.addEventListener('click', function() {
     if(sound.playing()) {
-      
       sound.pause();
+      
+
 
     } else {
       sound.play();
+      this.classList.toggle('stop');
     }
 
   })
   })
  
 
-  var vawe = document.getElementsById('#Line_1');
-
-  vawe.addEventListener('click',function() {
-    this.classList.toggle('red');
-     })
+  
+    // svganim.addEventListener('click', function() {
+    // svganim.classList.toggle('stop')
+    // })
