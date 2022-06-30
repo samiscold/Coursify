@@ -484,6 +484,14 @@ main.dark-mode .start-learning a button {
   justify-content: center;
 }
 
+iframe {
+    display: block;
+}
+
+canvas {
+    display: block;
+  }
+  
 /* intro page */
 /* animations */
 
@@ -582,6 +590,10 @@ footer {
   height: 20vh;
 }
 
+
+iframe {
+    height: 100vh;
+}
 /* homepage */
 /* media querries */
 
