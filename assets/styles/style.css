@@ -598,9 +598,60 @@ main.expect-from-coursify .dark-mode {
   opacity: 0;
 }
 
-.intro-footer {
+.push {
+  margin-bottom: 50px;
+}
+
+footer {
+  height: 60vh;
+  background:black;
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+footer .row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+footer .breaker {
+  background-color: #ee6001;
+  width: 100%;
+  height:2px;
+  margin-top:50px;
+}
+footer .row span {
+  color:rgb(188, 188, 188);
+}
+
+footer li a{
+  color: rgb(188, 188, 188);
+  text-decoration: none;
+}
+
+footer li a:hover {
+color:#ee6001;
+}
+footer li {
+  margin:50px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.social-icons li {
+  margin: 0px 30px;
+
 }
 
 canvas {
@@ -894,3 +945,7 @@ main {
 .course-hero-section-first p {
   font-size: 1.2rem;
 }
+
+
+
+/* footer  */
