@@ -56,7 +56,6 @@ header {
 }
 
 .brand-logo {
-  margin-top: 14px;
   max-width: 150px;
 }
 
@@ -135,6 +134,10 @@ header {
   margin-right: 5px;
   margin-left: 10px;
   color: #ee6001;
+}
+
+.active-nav {
+  color:#fea500 !important;
 }
 
 /* Hambuger menu */

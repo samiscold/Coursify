@@ -78,13 +78,15 @@
 
   .hamburger-icon {
     display: block;
-    margin-top: 7px;
     margin-left: 40px;
+    padding: 5px;
   }
 
   .respo-menus {
     margin: 0 auto;
     animation: moveFromTop 300ms ease-in-out;
+    position: absolute;
+    top:43px;
   }
 
   .respo-menus a:hover {
