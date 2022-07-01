@@ -10,13 +10,22 @@
     background-position: 60%;
   }
 
-  .search-bar {
-    width: 200px !important;
+  /* project section hero  */
+  .project-hero-section-first {
+    background-position: 60%;
   }
 
-  .search-bar::placeholder {
-    color: red;
+
+  /* course section hero  */
+  .course-hero-section-first {
+    background-position: 62%;
   }
+
+  
+
+
+
+
 
   .user {
     /* max-width: 150px !important; */
@@ -60,14 +69,12 @@
     display: none;
   }
 
-  header {
-    margin-bottom: 22px;
+
+  #myTopnav {
+    justify-content: space-between;
   }
 
-  .search-bar {
-    margin-left: 15px;
-    width: 1400px !important;
-  }
+
 
   .hamburger-icon {
     display: block;
