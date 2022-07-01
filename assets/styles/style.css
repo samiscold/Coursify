@@ -736,6 +736,7 @@ p,
   height: 100%;
 }
 #wave {
+  display: none;
   height: 20px;
   fill: orange;
 }
@@ -743,51 +744,67 @@ p,
   animation-play-state: paused;
 }
 
+#wave.run path {
+  animation-play-state: running;
+}
+
 #wave.stop path {
-  animation-play-state: paused;
+  animation-play-state:paused;
 }
 
 #Line_1 {
   animation: pulse 1s infinite;
   animation-delay: 0.15s;
+  animation-play-state: paused;
 }
 #Line_2 {
   animation: pulse 1s infinite;
   animation-delay: 0.3s;
+  animation-play-state: paused;
+
 }
 #Line_3 {
   animation: pulse 1s infinite;
   animation-delay: 0.45s;
+  animation-play-state: paused;
+
 }
 #Line_4 {
   animation: pulse 1s infinite;
   animation-delay: 0.6s;
+  animation-play-state: paused;
+
 }
 #Line_5 {
   animation: pulse 1s infinite;
   animation-delay: 0.75s;
+  animation-play-state: paused;
+
 }
 #Line_6 {
   animation: pulse 1s infinite;
   animation-delay: 0.9s;
+  animation-play-state: paused;
+
 }
 #Line_7 {
   animation: pulse 1s infinite;
   animation-delay: 1.05s;
+  animation-play-state: paused;
+
 }
 #Line_8 {
   animation: pulse 1s infinite;
   animation-delay: 1.2s;
+  animation-play-state: paused;
+
 }
 #Line_9 {
   animation: pulse 1s infinite;
   animation-delay: 1.35s;
+  animation-play-state: paused;
 }
 
-#Line_1.red {
-  animation-play-state: paused;
-  animation: none;
-}
 
 @keyframes pulse {
   0% {
