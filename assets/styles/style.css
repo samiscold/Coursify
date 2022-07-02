@@ -332,14 +332,13 @@ main.expect-from-coursify .dark-mode {
 .courses > h3 {
   display: block;
   width: 100%;
-  margin-left: 30px;
   margin-top: 20px;
 }
 
 .courses > h4 {
+  width: 100%;
   display: block;
   font-weight: normal;
-  margin-left: 30px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -349,10 +348,9 @@ main.expect-from-coursify .dark-mode {
   width: 22%;
   height: 500px;
   max-height: 500px;
-  /* background-color: black; */
-  margin-left: 35px;
+  /* margin-left: 35px; */
   margin-top: 15px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   background-color: white;
 }
 
@@ -749,7 +747,7 @@ p,
 }
 
 #wave.stop path {
-  animation-play-state:paused;
+  animation-play-state: paused;
 }
 
 #Line_1 {
@@ -761,50 +759,42 @@ p,
   animation: pulse 1s infinite;
   animation-delay: 0.3s;
   animation-play-state: paused;
-
 }
 #Line_3 {
   animation: pulse 1s infinite;
   animation-delay: 0.45s;
   animation-play-state: paused;
-
 }
 #Line_4 {
   animation: pulse 1s infinite;
   animation-delay: 0.6s;
   animation-play-state: paused;
-
 }
 #Line_5 {
   animation: pulse 1s infinite;
   animation-delay: 0.75s;
   animation-play-state: paused;
-
 }
 #Line_6 {
   animation: pulse 1s infinite;
   animation-delay: 0.9s;
   animation-play-state: paused;
-
 }
 #Line_7 {
   animation: pulse 1s infinite;
   animation-delay: 1.05s;
   animation-play-state: paused;
-
 }
 #Line_8 {
   animation: pulse 1s infinite;
   animation-delay: 1.2s;
   animation-play-state: paused;
-
 }
 #Line_9 {
   animation: pulse 1s infinite;
   animation-delay: 1.35s;
   animation-play-state: paused;
 }
-
 
 @keyframes pulse {
   0% {
