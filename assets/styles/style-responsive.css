@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1400px) {
-  .courses .course-box {
+  .course-box {
     width: 30%;
   }
 }
@@ -15,20 +15,9 @@
     background-position: 60%;
   }
 
-
   /* course section hero  */
   .course-hero-section-first {
     background-position: 62%;
-  }
-
-  
-
-
-
-
-
-  .user {
-    /* max-width: 150px !important; */
   }
 
   .menus {
@@ -36,8 +25,8 @@
     margin-left: -40px;
   }
 
-  .courses .course-box {
-    width: 40%;
+  .course-box {
+    width: 48%;
   }
 
   .expect-from-coursify {
@@ -56,6 +45,10 @@
   .efc-2 {
     margin-top: -40px;
   }
+  .project .course-box .student i {
+    margin-left: -130px;
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -69,12 +62,9 @@
     display: none;
   }
 
-
   #myTopnav {
     justify-content: space-between;
   }
-
-
 
   .hamburger-icon {
     display: block;
@@ -86,7 +76,7 @@
     margin: 0 auto;
     animation: moveFromTop 300ms ease-in-out;
     position: absolute;
-    top:43px;
+    top: 43px;
   }
 
   .respo-menus a:hover {
@@ -123,8 +113,8 @@
     height: 500px;
   }
 
-  .courses .course-box {
-    width: 80%;
+  .course-box {
+    width: 100%;
   }
 
   .expect-from-coursify .col-2 {
@@ -147,6 +137,11 @@
 
   .expect-from-coursify {
     margin-bottom: 900px;
+  }
+
+  .project .course-box .student i {
+    margin-left: -110px;
+    padding: 10px;
   }
 }
 
