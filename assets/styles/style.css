@@ -85,11 +85,9 @@ header {
 .search-bar {
   max-width: 100%;
   display: block;
-  margin:20px 0;
+  margin: 20px 0;
   padding: 0;
 }
-
-
 
 .search-bar input {
   background-color: transparent;
@@ -101,15 +99,14 @@ header {
   padding-left: 30px;
   color: #777;
   border-bottom: 2px solid #ee6001;
-
 }
 
 .search-bar input:focus {
   outline: none;
-  background:#ffffff;
+  background: #ffffff;
   border-bottom: 3px solid #ee6001;
-  
-  transition:500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .search-bar i {
@@ -137,7 +134,7 @@ header {
 }
 
 .active-nav {
-  color:#fea500 !important;
+  color: #fea500 !important;
 }
 
 /* Hambuger menu */
@@ -521,6 +518,9 @@ main.expect-from-coursify .dark-mode {
   width: 55px;
 }
 
+.is-hidden {
+  display: none;
+}
 /* ******* */
 /* Project */
 /* ******* */
@@ -659,7 +659,7 @@ main.expect-from-coursify .dark-mode {
 
 footer {
   height: 60vh;
-  background:black;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -678,23 +678,23 @@ footer .row {
 footer .breaker {
   background-color: #ee6001;
   width: 100%;
-  height:2px;
-  margin-top:50px;
+  height: 2px;
+  margin-top: 50px;
 }
 footer .row span {
-  color:rgb(188, 188, 188);
+  color: rgb(188, 188, 188);
 }
 
-footer li a{
+footer li a {
   color: rgb(188, 188, 188);
   text-decoration: none;
 }
 
 footer li a:hover {
-color:#ee6001;
+  color: #ee6001;
 }
 footer li {
-  margin:50px 0;
+  margin: 50px 0;
 }
 
 .social-icons {
@@ -706,7 +706,6 @@ footer li {
 
 .social-icons li {
   margin: 0px 30px;
-
 }
 
 canvas {
@@ -792,6 +791,7 @@ li {
 }
 
 main {
+  margin-top: -20px;
   padding: 20px;
   min-height: 100%;
   background-color: #f2f2f2;
@@ -928,20 +928,19 @@ main {
   }
 }
 
-
 /* projects-page  */
 
 .gallery img {
-    width: 32%;
-    float: left;
-    margin: 1.66% 0;
-    margin-right: 0px;
-    margin-right: 1%;
+  width: 32%;
+  float: left;
+  margin: 1.66% 0;
+  margin-right: 0px;
+  margin-right: 1%;
 }
 
 .gallery {
   width: 85%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .project-hero-section-first {
   width: 100%;
@@ -957,7 +956,8 @@ main {
   padding: 50px 0;
 }
 
-.project-hero-section-first h1, p,
+.project-hero-section-first h1,
+p,
 .buttons {
   width: 85%;
   margin: 0 auto;
@@ -986,7 +986,8 @@ main {
   padding: 50px 0;
 }
 
-.course-hero-section-first h1, p,
+.course-hero-section-first h1,
+p,
 .buttons {
   width: 85%;
   margin: 0 auto;
@@ -1000,7 +1001,5 @@ main {
 .course-hero-section-first p {
   font-size: 1.2rem;
 }
-
-
 
 /* footer  */
