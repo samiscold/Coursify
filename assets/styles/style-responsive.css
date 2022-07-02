@@ -49,6 +49,10 @@
     margin-left: -130px;
     padding: 10px;
   }
+
+  .project .project-details {
+    width: 48%;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -142,6 +146,10 @@
   .project .course-box .student i {
     margin-left: -110px;
     padding: 10px;
+  }
+
+  .project .project-details {
+    width: 100%;
   }
 }
 
