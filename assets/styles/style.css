@@ -287,19 +287,19 @@ header {
 /* Dark Light Mode */
 /* *************** */
 
-main.dark-mode button {
+/* main.dark-mode button {
   color: #ee6001;
   border: 1px solid #ee6001;
   background-color: transparent;
   padding: 5px 15px;
-}
+} */
 
-main.light-mode button {
+/* main.light-mode button {
   color: #ee6001;
   border: 1px solid #ee6001;
   background-color: transparent;
   padding: 5px 15px;
-}
+} */
 
 main.dark-mode {
   background-color: #222;
@@ -359,7 +359,7 @@ main.expect-from-coursify .dark-mode {
 
 .course-box {
   position: relative;
-  width: 22%;
+  width: 23%;
   height: 500px;
   max-height: 500px;
   /* margin-left: 35px; */
@@ -441,6 +441,11 @@ main.expect-from-coursify .dark-mode {
 .courses .course-box .start-learning a button:hover {
   border: 1px solid #ee6001;
   color: #ee6001;
+}
+
+.viewAll {
+  display: block;
+  text-align: right;
 }
 
 /* ******************** */
@@ -828,8 +833,6 @@ main {
 }
 
 .button-primary {
-  display: block;
-  float: right;
   border: none;
   padding: 16px 32px;
   background: #ee6001;
