@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1400px) {
-  .courses .course-box {
+  .course-box {
     width: 30%;
   }
 }
@@ -18,17 +18,13 @@
     color: red;
   }
 
-  .user {
-    /* max-width: 150px !important; */
-  }
-
   .menus {
     width: 500px !important;
     margin-left: -40px;
   }
 
-  .courses .course-box {
-    width: 40%;
+  .course-box {
+    width: 48%;
   }
 
   .expect-from-coursify {
@@ -46,6 +42,10 @@
   .efc-1,
   .efc-2 {
     margin-top: -40px;
+  }
+  .project .course-box .student i {
+    margin-left: -130px;
+    padding: 10px;
   }
 }
 
@@ -114,8 +114,8 @@
     height: 500px;
   }
 
-  .courses .course-box {
-    width: 80%;
+  .course-box {
+    width: 100%;
   }
 
   .expect-from-coursify .col-2 {
@@ -138,6 +138,11 @@
 
   .expect-from-coursify {
     margin-bottom: 900px;
+  }
+
+  .project .course-box .student i {
+    margin-left: -110px;
+    padding: 10px;
   }
 }
 
