@@ -444,7 +444,7 @@ main.expect-from-coursify .dark-mode {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 300px;
 }
 
 .efc {
