@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/style-responsive.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.69/build/runtime.js"
+      }
+    }
+  </script>
+  <title>Coursify - Learn new skills everyday</title>
+</head>
+
+<body>
+
+
+  <body>
+
+    <header>
+      <nav class="menu-bar width-page" id="myTopnav">
+        <div class="brand-logo">
+          <a href="welcome.html">COURSIFY</a>
+        </div>
+        <div class="menus">
+          <ul>
+            <li><a class="active-nav" href="courses.html">Courses</a> </li>
+            <li><a href="projects.html">Projects</a> </li>
+
+
+
+          </ul>
+        </div>
+        <!-- <div class="search-bar">
+          <i class="fa fa-search">
+          </i>
+          <input type="search" placeholder="Search">
+        </div> -->
+        <div class="user">
+          <svg class="music-icon" id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+            <path id="Line_1" class="t" data-name="Line 1"
+              d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z" />
+            <path id="Line_1" class="t" data-name="Line 2"
+              d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z" />
+            <path id="Line_1" class="t" data-name="Line 3"
+              d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z" />
+            <path id="Line_1" class="t" data-name="Line 4"
+              d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z" />
+            <path id="Line_1" class="t" data-name="Line 5"
+              d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z" />
+            <path id="Line_1" class="t" data-name="Line 6"
+              d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z" />
+            <path id="Line_1" class="t" data-name="Line 7"
+              d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z" />
+            <path id="Line_1" class="t" data-name="Line 8"
+              d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z" />
+            <path id="Line_1" class="t" data-name="Line 9"
+              d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z" />
+          </svg>
+          <p>
+            <i class="fa fa-user"></i>
+            Welcome,
+            <label class="username" id="username">
+              <script>
+                var user = sessionStorage.getItem('username');
+                document.getElementById('username').innerHTML = user;
+              </script>
+            </label>
+          </p>
+
+
+
+        </div>
+
+
+
+
+        <!-- Hamburger menu -->
+        <nav class="hamburger-icon" onclick="showMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <nav class="respo-menus">
+            <ul>
+              <li><a class="active-nav" href="courses.html">Courses</a> </li>
+              <li><a href="projects.html">Projects</a> </li>
+            </ul>
+          </nav>
+        </nav>
+        <!--  -->
+      </nav>
+    </header>
+
+    <section class="course-hero-section-first">
+      <h1>Check hundreds of courses to learn from.</h1>
+      <p>Enroll in one of our courses and skyrocket <br>your career </p>
+      <div class="buttons">
+        <div class="search-bar">
+          
+          <i class="fa fa-search">
+          </i>
+          <input type="search" id="search" placeholder="Search">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <main>
+    <section class="courses width-page">
+      <div class="course-box">
+        <div class="image">
+          <label class="feature">NEW</label>
+          <img src="assets/images/Logo+HTML5.webp" alt="" srcset="">
+          <a href="">
+            <i class="fa fa-play"></i>
+          </a>
+        </div>
+        <div class="title">
+          <h3>HTML</h3>
+          <h6>By Samir Vllaqo</h6>
+        </div>
+        <div class="desc">
+          <p>
+            HTML (HyperText Markup Language) is the code that is used to structure a web page and its content
+          </p>
+        </div>
+        <div class="student">
+          <i class="fa fa-user"></i>
+          300
+          <i class="fa fa-thumbs-up"></i>
+          300
+        </div>
+        <div class="start-learning">
+          <a href="">
+            <button>Start Learning</button>
+          </a>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="image">
+          <label class="feature">NEW</label>
+          <img src="assets/images/css-logo.webp" alt="" srcset="">
+          <a href="">
+            <i class="fa fa-play"></i>
+          </a>
+        </div>
+        <div class="title">
+          <h3>CSS</h3>
+          <h6>By Samir Vllaqo</h6>
+        </div>
+        <div class="desc">
+          <p>
+            Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
+            written in HTML or XML (including XML dialects such as SVG, MathML or XHTML).
+          </p>
+        </div>
+        <div class="student">
+          <i class="fa fa-user"></i>
+          300
+          <i class="fa fa-thumbs-up"></i>
+          300
+        </div>
+        <div class="start-learning">
+          <a href="">
+            <button>Start Learning</button>
+          </a>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="image">
+          <label class="feature">NEW</label>
+          <img src="assets/images/1_6ahbWjp_g9hqhaTDSJOL1Q.webp" alt="" srcset="">
+          <a href="">
+            <i class="fa fa-play"></i>
+          </a>
+        </div>
+        <div class="title">
+          <h3>JavaScript</h3>
+          <h6>By Samir Vllaqo</h6>
+        </div>
+        <div class="desc">
+          <p>
+            JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with
+            first-class functions
+          </p>
+        </div>
+        <div class="student">
+          <i class="fa fa-user"></i>
+          300
+          <i class="fa fa-thumbs-up"></i>
+          300
+        </div>
+        <div class="start-learning">
+          <a href="">
+            <button>Start Learning</button>
+          </a>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="image">
+          <label class="feature">NEW</label>
+          <img src="assets/images/wp8661113.webp" alt="" srcset="">
+          <a href="">
+            <i class="fa fa-play"></i>
+          </a>
+        </div>
+        <div class="title">
+          <h3>Python</h3>
+          <h6>By Samir Vllaqo</h6>
+        </div>
+        <div class="desc">
+          <p>
+            Python is a high-level, interpreted, general-purpose programming language. Its design philosophy
+            emphasizes code readability with the use of significant indentation. Python is dynamically-typed and
+            garbage-collected
+          </p>
+        </div>
+        <div class="student">
+          <i class="fa fa-user"></i>
+          300
+          <i class="fa fa-thumbs-up"></i>
+          300
+        </div>
+        <div class="start-learning">
+          <a href="">
+            <button>Start Learning</button>
+          </a>
+        </div>
+      </div>
+      
+      <span class="is-hidden">secret</span> 
+    </section>
+    </main>
+
+
+
+      
+
+   
+  
+          
+  
+
+
+    <canvas id="canvas3d"></canvas>
+
+  
+
+
+
+
+    <div class="push"></div>
+    <footer>
+
+        <div class="row">
+          <div class="brand-logo">
+          <a href="welcome.html">COURSIFY</a>
+          </div>
+
+          <center>
+            <span>Made with ☕ and 🖤 by Samir & Edon </span>
+          </center>
+
+          <div class="breaker"></div>
+              <li><a class="active-nav" href="courses.html">Courses</a> </li>
+              <li><a href="projects.html">Projects</a> </li>
+  
+
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/howler/dist/howler.min.js"></script>
+    <script>
+      var sound = new Howl({
+        src: ['audios/music.mp3']
+      });
+    </script>
+    <script src="assets/scripts/howler.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="module" src="assets/scripts/webgl.js"></script>
+    <script src="assets/scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/cdf60cb5fd.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/logs.js"></script>
+    <script src="assets/scripts/search.js"></script>
+  </body>
+
+</html>

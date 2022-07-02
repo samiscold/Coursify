@@ -86,6 +86,11 @@ header {
 .search-bar {
   max-width: 300px;
   display: block;
+<<<<<<< Updated upstream
+=======
+  margin: 20px 0;
+  padding: 0;
+>>>>>>> Stashed changes
 }
 
 .search-bar input {
@@ -97,11 +102,22 @@ header {
   width: 100%;
   padding-left: 30px;
   color: #777;
+<<<<<<< Updated upstream
+=======
+  border-bottom: 2px solid #ee6001;
+>>>>>>> Stashed changes
 }
 
 .search-bar input:focus {
   background-color: white;
   outline: none;
+<<<<<<< Updated upstream
+=======
+  background: #ffffff;
+  border-bottom: 3px solid #ee6001;
+
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+>>>>>>> Stashed changes
 }
 
 .search-bar i {
@@ -128,6 +144,13 @@ header {
   color: #ee6001;
 }
 
+<<<<<<< Updated upstream
+=======
+.active-nav {
+  color: #fea500 !important;
+}
+
+>>>>>>> Stashed changes
 /* Hambuger menu */
 .hamburger-icon {
   display: none;
@@ -431,6 +454,10 @@ main.expect-from-coursify .dark-mode {
   color: #ee6001;
 }
 
+.is-hidden {
+  display: none;
+}
+
 /* ******************** */
 /* expect-from-coursify */
 /* ******************** */
@@ -588,9 +615,65 @@ main.expect-from-coursify .dark-mode {
   opacity: 0;
 }
 
+<<<<<<< Updated upstream
 .intro-footer {
   display: flex;
   justify-content: center;
+=======
+.push {
+  margin-bottom: 50px;
+}
+
+footer {
+  height: 60vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+footer .row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+footer .breaker {
+  background-color: #ee6001;
+  width: 100%;
+  height: 2px;
+  margin-top: 50px;
+}
+footer .row span {
+  color: rgb(188, 188, 188);
+}
+
+footer li a {
+  color: rgb(188, 188, 188);
+  text-decoration: none;
+}
+
+footer li a:hover {
+  color: #ee6001;
+}
+footer li {
+  margin: 50px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.social-icons li {
+  margin: 0px 30px;
+>>>>>>> Stashed changes
 }
 
 canvas {
@@ -820,3 +903,82 @@ p,
     transform-origin: 50% 50%;
   }
 }
+<<<<<<< Updated upstream
+=======
+
+/* projects-page  */
+
+.gallery img {
+  width: 32%;
+  float: left;
+  margin: 1.66% 0;
+  margin-right: 0px;
+  margin-right: 1%;
+}
+
+.gallery {
+  width: 85%;
+  margin: 0 auto;
+}
+.project-hero-section-first {
+  width: 100%;
+  height: auto;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background: url(/assets/images/projects-hero.jpg);
+  background-position: center center;
+  padding: 50px 0;
+}
+
+.project-hero-section-first h1,
+p,
+.buttons {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.project-hero-section-first h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2%;
+}
+
+.project-hero-section-first p {
+  font-size: 1.2rem;
+}
+
+.course-hero-section-first {
+  width: 100%;
+  height: auto;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background: url(/assets/images/course-hero.jpg);
+  background-position: center center;
+  padding: 50px 0;
+}
+
+.course-hero-section-first h1,
+p,
+.buttons {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.course-hero-section-first h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2%;
+}
+
+.course-hero-section-first p {
+  font-size: 1.2rem;
+}
+
+/* footer  */
+>>>>>>> Stashed changes
