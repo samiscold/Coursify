@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style-responsive.css">
+    <script type="importmap">
+          {
+            "imports": {
+              "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.69/build/runtime.js"
+            }
+          }
+        </script>
+    <title>Coursify - Learn new skills everyday</title>
+</head>
+
+<body>
+
+
+    <body>
+
+        <header>
+            <nav class="menu-bar width-page" id="myTopnav">
+                <div class="brand-logo">
+                    <a href="welcome.html">COURSIFY</a>
+                </div>
+                <div class="menus">
+                    <ul>
+                        <li><a href="courses.html">Courses</a> </li>
+                        <li><a href="projects.html">Projects</a> </li>
+
+
+
+                    </ul>
+                </div>
+                <!-- <div class="search-bar">
+                <i class="fa fa-search">
+                </i>
+                <input type="search" placeholder="Search">
+              </div> -->
+                <div class="user">
+                    <svg class="music-icon" id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 38.05">
+                        <path id="Line_1" class="t" data-name="Line 1"
+                            d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z" />
+                        <path id="Line_1" class="t" data-name="Line 2"
+                            d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z" />
+                        <path id="Line_1" class="t" data-name="Line 3"
+                            d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z" />
+                        <path id="Line_1" class="t" data-name="Line 4"
+                            d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z" />
+                        <path id="Line_1" class="t" data-name="Line 5"
+                            d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z" />
+                        <path id="Line_1" class="t" data-name="Line 6"
+                            d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z" />
+                        <path id="Line_1" class="t" data-name="Line 7"
+                            d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z" />
+                        <path id="Line_1" class="t" data-name="Line 8"
+                            d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z" />
+                        <path id="Line_1" class="t" data-name="Line 9"
+                            d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z" />
+                    </svg>
+                    <p>
+                        <i class="fa fa-user"></i>
+                        Welcome,
+                        <label class="username" id="username">
+                            <script>
+                                var user = sessionStorage.getItem('username');
+                                document.getElementById('username').innerHTML = user;
+                            </script>
+                        </label>
+                    </p>
+
+
+
+                </div>
+
+
+
+
+                <!-- Hamburger menu -->
+                <nav class="hamburger-icon" onclick="showMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <nav class="respo-menus">
+                        <ul>
+                            <li><a href="">Courses</a> </li>
+                            <li><a href="projects.html">Projects</a> </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <!--  -->
+            </nav>
+        </header>
+        <section class="project-hero-section-first">
+            <h1>Web Multimedia</h1>
+            <p></p>
+
+        </section>
+
+        <!-- Section -->
+
+        <section class="courses-content width-page">
+
+            <div class="col-1">
+                <h4 class="intro active" id="intro">Introduction</h4>
+                <h4 class="less disable">Lesson</h4>
+                <h4 class="qa disable">Quize</h4>
+            </div>
+            <div class="col-2">
+                <div class="introduction">
+                    <h4>Introduction</h4>
+                    <video src="assets/images/videoIntro.mp4" controls></video>
+                    <p>
+                        <strong>Çka është Multimedia?</strong>
+                        <br>→ është media e cila përdorë shumë forma të prezantimit dhe procesimit të informatës.
+                        <br><br>
+                        Cilat janë elementet thelbësore multimediale? <br>
+                    <ul>
+                        <li>• Teksti</li>
+                        <li>• Grafika</li>
+                        <li>• Animacionet</li>
+                        <li>• Video</li>
+                        <li>• Audio</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <br><strong>Teksti</strong><br>
+                        →karakteret që perdorën për të krijuar fjalë, fjali dhe paragrafë.
+                    </p>
+                    <p>
+                        <br><strong>Grafika</strong><br>
+                        → Paraqitje digjitale jo-tekstuale e informatës, sikurse një vizatim, imazh, apo
+                        graf.
+                    </p>
+                    <br>
+                    <p><strong>Animacioni</strong><br>
+                        →një seri e vizatimeve që lejnë përshtypjen e lëvizjes
+                        Video
+                        → Një seri e imazheve (fotografike) që prezentohen me minimum 15 imazhe pë
+                        sekond dhe lejnë pështypjen e lëvizjes</p><br>
+                    <p><strong>Audio</strong><br>
+                        →të folurit, muzikë apo çfardo tingulli.</p><br>
+                    <p><strong>Kategorizimi</strong><br>
+                    <ul>
+                        <li>• Lineare</li>
+                        – Konsumatori nuk ka ndonjë kontrollë mbi procesin multimedial
+                        → Kinemaja
+                        <li>• Jo-Lineare</li>
+                        – Përdor interaktivitetin për kontrolle të përjetimit multimedial.
+                    </ul>
+
+                    </p><br>
+                    <p><strong>Perceptimi – si shohim</strong><br>
+                        Dy tipe të ndryshme të foto-receptorëve <br>
+                    <ul>
+                        <li> • Thuprat – afër 100,000,000 </li>
+                        <li> • Boçat- afër 5,000,000 </li>
+                        <li> • Boçat: ‘day vision’, të ndjeshëm në ngjyrë</li>
+                        <li> • Red(long), green(medium), and blue(small) cones</li>
+                        <li> • Different cones have different frequency responses</li>
+                        <li> • Tri-receptor theory of color vision [Young1802] </li>
+                        <li> • Thuprat: ‘night vision’, të ndjeshëm në (brightness) only </li>
+                        <li> • Rod- Thuper, shkopth</li>
+                        <li> • Cone - boçë</li>
+                    </ul>
+                    </p>
+                    Introduction mund ta bëni edhe
+                    <a class="download" href="assets/doc/intro.pdf" download="assets/doc/intro.pdf">Download in PDF</a>
+                    <div class="buttons">
+                        <a href="#intro">
+                            <button class="courseBtn startButton"> Start Lessons </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lesson hidden">
+                    <h4>Lessons</h4>
+                    <div class="lesson-1">
+                        <p>
+                            <strong>
+                                Perceptimi
+                            </strong><br>
+                            <img src="assets/images/coursesPhoto.png" alt=""><br>
+                        </p><br>
+
+
+                        <table>
+                            <tr>
+                                <th>Cone type</th>
+                                <th>Name</th>
+                                <th>Range</th>
+                                <th>Peak Wavelength</th>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>β</td>
+                                <td>400-500 nm </td>
+                                <td>420-440 nm</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>γ</td>
+                                <td>450–630 nm</td>
+                                <td>534–555 nm</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>ρ</td>
+                                <td>500–700 nm</td>
+                                <td>564–580 nm</td>
+                            </tr>
+                        </table>
+
+
+
+                        <p>
+                            <strong>Modelet e ngjyrave</strong><br>
+                            Bashkësia më e popullarizuar e ngjyrave primare për burim drite
+                            ndriçues përmban: të kuqen (Red) , të gjelbrën (Green), të kaltrën
+                            (Blue)
+                            → RGB, (model aditiv i ngjyrës - additive color model) <br>
+                            • Bashkësia më e popullarizuar e ngjyrave primare për burim drite
+                            reflektues përmban: tyrkis/kaltër?(Cyan) , të purpurtën
+                            (Magenta), të verdhën (Yellow)
+                            → RGB, (model aditiv i ngjyrës - additive color model) <br>
+                        </p>
+                        <p>
+                            <strong>Modelet e ngjyrave sipas aplikimit</strong><br>
+                            Cili model aplikohet ne video(screen) e cili ne shtyp?
+                        <ul>
+                            <li>CMY (K) Model per ngjyra ne shtyp</li>
+                            <li>• RGB monitora, grafike kompjuterike</li>
+                        </ul>
+                        </p>
+                        <br>
+                        <div class="buttons">
+                            <!-- <button class="backLesson" disabled>Back</button> -->
+                            <a href="#intro">
+                                <button class="nextLesson courseBtn" href="#intro">Next</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lesson-2 hidden" >
+                        <p>
+                            Teksti <br>
+                            <ul>
+                                <li>• Si e adresojmë tesktin në ueb? </li>
+                                <li>• Cilat tags?</li>
+                                <li>• Si e stilizojmë?</li>
+                                <li>• Cka janë etiketat semnatike në ueb «semantic tags». Tregoni disa shembuj?</li>
+                                <li>• Çka janë etiketat prezentuese në ueb, Tregoni disa shembuj.</li>
+                            </ul>
+                        </p> <br>
+                        <p>
+                            Etiketat Semantike
+
+                        </p>
+                        <div class="buttons">
+                            <a href="#intro">
+                                <button class="backLesson courseBtn">Back</button>
+                            <button class="quizeButton courseBtn" href="#intro">Take The Quiz</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="quize hidden">
+                    <h4>Quizes</h4>
+                </div>
+            </div>
+
+        </section>
+
+        <!--  -->
+
+
+
+        <footer>
+
+            <div class="row">
+                <div class="brand-logo">
+                    <a href="welcome.html">COURSIFY</a>
+                </div>
+
+                <center>
+                    <span>Made with ☕ and 🖤 by Samir & Edon </span>
+                </center>
+
+                <div class="breaker"></div>
+                <li><a href="courses.html">Courses</a> </li>
+                <li><a href="projects.html">Projects</a> </li>
+
+
+            </div>
+
+            </div>
+            </div>
+        </footer>
+        <script src="node_modules/howler/dist/howler.min.js"></script>
+        <script>
+            var sound = new Howl({
+                src: ['audios/music.mp3']
+            });
+        </script>
+        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+        <script src="https://kit.fontawesome.com/cdf60cb5fd.js" crossorigin="anonymous"></script>
+        <script type="module" src="assets/scripts/webgl.js"></script>
+        <script src="assets/scripts/howler.js"></script>
+        <script src="assets/scripts/index.js"></script>
+        <script src="assets/scripts/logs.js"></script>
+        <script src="assets/scripts/search.js"></script>
+        <script src="assets/scripts/courses.js"></script>
+
+    </body>
+
+</html>

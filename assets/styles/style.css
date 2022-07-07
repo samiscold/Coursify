@@ -228,6 +228,40 @@ header {
   user-select: none;
 }
 
+/* ***************** */
+/* Next Back buttons */
+/* ***************** */
+button:disabled,
+button[disabled] {
+  border: none;
+  color: #717171;
+}
+button:disabled:hover,
+button[disabled]:hover {
+  border: none;
+  color: #717171;
+}
+
+.buttons {
+  text-align: right;
+}
+
+.courseBtn {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding: 10px 30px;
+}
+
+.courseBtn:hover {
+  border-bottom: 1px solid #ee6001;
+  color: #ee6001;
+}
+
+.disable {
+  opacity: 0.5;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -370,9 +404,8 @@ main.expect-from-coursify .dark-mode {
 .course-box .image img {
   width: 100%;
   height: 200px;
-object-fit: cover;
+  object-fit: cover;
 }
-
 
 .course-box .image label {
   position: absolute;
@@ -450,22 +483,21 @@ object-fit: cover;
   width: 25px;
   height: 20px;
   position: absolute;
-  top:30px;
-  right:20px;
+  top: 30px;
+  right: 20px;
 }
 
 .lock:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
-  border:3px solid yellow;
+  border: 3px solid yellow;
   top: -14px;
   left: 2.3px;
   width: 15px;
   height: 27px;
   border-radius: 35px 35px 0 0;
 }
-
 
 .viewAll {
   display: block;
@@ -666,6 +698,140 @@ body {
 .project .button-secondary:hover {
   border: 1px solid #ee6001;
   color: #ee6001;
+}
+
+/* ******************** */
+/* Courses Content Page */
+/* ******************** */
+
+.courses-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.courses-content .active {
+  background: linear-gradient(to left, #ee6001 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.courses-content .active {
+  background-color: #ee6001;
+  color: white;
+}
+
+.courses-content .col-1 {
+  width: 27%;
+  /* height: 100px; */
+}
+
+.courses-content .col-1 h4 {
+  border-bottom: 1px solid #ee6001;
+  font-weight: normal;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+}
+
+.courses-content .col-2 {
+  width: 70%;
+  height: auto;
+  margin-bottom: 50px;
+  /* background-color: blue; */
+  justify-content: left;
+}
+
+.courses-content .col-2 div {
+  animation: fade 2s;
+}
+
+.col-2 img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.col-2 .download {
+  color: #ee6001;
+}
+
+.col-2 .download:hover {
+  text-decoration: none;
+}
+
+.courses-content .col-2 video {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.col-2 ul {
+  margin-left: 50px;
+}
+
+.col-2 h4 {
+  margin-bottom: 30px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* ***** */
+/* Table */
+/* ***** */
+table {
+  margin-left: 60px;
+  margin-bottom: 30px;
+  width: 70%;
+  border-spacing: 20px;
+}
+
+table tr th {
+  border-bottom: 3px solid #ee6001;
+  padding: 10px;
+}
+
+table tr td {
+  border-bottom: 1px solid #ee6001;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* ********** */
+/* Scroll bar */
+/* ********** */
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee6001;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c45002;
 }
 
 /* intro page */
