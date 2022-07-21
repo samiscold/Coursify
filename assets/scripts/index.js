@@ -88,9 +88,22 @@ function showSlides(n) {
 
 // Dark / Light Mode
 function toggleDarkLight() {
-  var body = document.getElementById("body");
+  const fa_moon = document.querySelector('.fa-moon')
+  let DL = document.querySelector('#D-L');
+  var body = document.querySelector("#bodys");
   var currentClass = body.className;
   body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  if (body.className == "dark-mode") {
+    DL.textContent = "Dark"
+    DL.style.color = "#ee6001"
+    fa_moon.style.color = "#ee6001"
+
+  } else {
+    DL.textContent = "Light"
+    DL.style.color = "white"
+    fa_moon.style.color = "white"
+  }
 }
+
 
 

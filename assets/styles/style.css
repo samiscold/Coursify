@@ -127,7 +127,7 @@ header {
   /* color: #ee6001; */
 }
 
-.user p i {
+.user p .fa-user {
   margin-right: 5px;
   margin-left: 10px;
   color: #ee6001;
@@ -331,12 +331,17 @@ button[disabled]:hover {
 /* Dark Light Mode */
 /* *************** */
 
-/* main.dark-mode button {
-  color: #ee6001;
+.dark-light {
+  color: white;
   border: 1px solid #ee6001;
   background-color: transparent;
-  padding: 5px 15px;
-} */
+  padding: 7px 10px 7px 10px;
+  margin-left: 10px;
+}
+
+.dark-light i {
+  margin-left: 6px;
+}
 
 /* main.light-mode button {
   color: #ee6001;
@@ -349,7 +354,9 @@ main.dark-mode {
   background-color: #222;
 }
 
-main.dark-mode .course-box {
+main.dark-mode .course-box,
+main.dark-mode .project-details,
+main.dark-mode .project-details .button-secondary {
   background-color: black;
 }
 
@@ -359,24 +366,47 @@ main.dark-mode h3,
 main.dark-mode h4,
 main.dark-mode h5,
 main.dark-mode h6,
+main.dark-mode p,
+main.dark-mode ul,
+main.dark-mode table,
 main.dark-mode .student,
+main.dark-mode .buttons a button,
+main.dark-mode .buttons a button,
 main.dark-mode .start-learning a button,
-main.dark-mode .start-project a button {
+main.dark-mode .quizes-part div,
+main.dark-mode .start-project a button,
+main.dark-mode .project-details .button-secondary,
+main.dark-mode .project {
   color: white !important;
 }
+
 main.dark-mode .start-learning a button,
 main.dark-mode .start-project a button {
   border: 1px solid white !important;
 }
 
+main.dark-mode .buttons a button {
+  border-bottom: 1px solid white !important;
+}
+
+main.dark-mode .buttons a button:hover {
+  border-bottom: 1px solid #ee6001 !important;
+  color: #ee6001 !important;
+}
+
 main.dark-mode .start-learning a button:hover,
-main.dark-mode .start-project a button:hover {
+main.dark-mode .start-project a button:hover,
+main.dark-mode .project-details .button-secondary:hover {
   border: 1px solid #ee6001 !important;
   color: #ee6001 !important;
 }
 
-main.expect-from-coursify .dark-mode {
+main.dark-mode .quizes-part {
   background-color: #222;
+}
+
+main.dark-mode .expect-from-coursify {
+  background-color: #555;
 }
 
 /* ************ */
@@ -612,7 +642,9 @@ main.expect-from-coursify .dark-mode {
 /* ******* */
 
 .project {
-  margin-top: 40px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -660,10 +692,6 @@ main.expect-from-coursify .dark-mode {
 
 body {
   background-color: #f2f2f2;
-}
-
-.project {
-  margin-bottom: 50px;
 }
 
 .project-details {
@@ -727,7 +755,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .courses-content .active {

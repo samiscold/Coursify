@@ -75,7 +75,12 @@
                                 document.getElementById('username').innerHTML = user;
                             </script>
                         </label>
+                        <button type="button" class="dark-light" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">
+                            <span id="D-L">Light</span>
+                            <i class="fa fa-moon"></i>
+                          </button>
                     </p>
+                    
 
 
 
@@ -99,14 +104,15 @@
                 <!--  -->
             </nav>
         </header>
+
+
         <section class="project-hero-section-first">
             <h1>Web Multimedia</h1>
             <p></p>
-
         </section>
 
         <!-- Section -->
-
+        <main id="bodys" class="light-mode">
         <section class="courses-content width-page">
 
             <div class="col-1">
@@ -177,8 +183,10 @@
                         <li> • Cone - boçë</li>
                     </ul>
                     </p>
-                    Introduction mund ta bëni edhe
+                    <p>
+                        Introduction mund ta bëni edhe
                     <a class="download" href="assets/doc/intro.pdf" download="assets/doc/intro.pdf">Download in PDF</a>
+                    </p>
                     <div class="buttons">
                         <a href="#intro">
                             <button class="courseBtn startButton"> Start Lessons </button>
@@ -307,7 +315,7 @@ processing, an image is a distributed amplitude of color(s)
                         <div class="buttons">
                             <a href="#intro">
                                 <button class="backLesson courseBtn">Back</button>
-                                <button class="quizeButton courseBtn" href="#intro">Take The Quiz</button>
+                                <button class="quizeButton courseBtn">Take The Quiz</button>
                             </a>
                         </div>
                     </div>
@@ -388,6 +396,7 @@ processing, an image is a distributed amplitude of color(s)
                 </div>
             </div>
         </section>
+        </main>
         <!--  -->
 
 

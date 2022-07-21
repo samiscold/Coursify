@@ -64,6 +64,10 @@
                 document.getElementById('username').innerHTML = user;
               </script>
             </label>
+            <button type="button" class="dark-light" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">
+              <span id="D-L">Light</span>
+              <i class="fa fa-moon"></i>
+            </button>
           </p>
 
 
@@ -141,9 +145,7 @@
 
     </section>
 
-    <main id="body" class="body light-mode">
-      <button type="button" class="dark-light" name="dark_light" onclick="toggleDarkLight()"
-        title="Toggle dark/light mode">Dark Mode / Light Mode</button>
+    <main id="bodys" class="light-mode">
       <section class="courses width-page">
         <h3>Learn by doing</h3>
         <h4>
@@ -280,7 +282,7 @@
       </a>
 
 
-      <section class="expect-from-coursify width-page dark-mode">
+      <section class="expect-from-coursify width-page ">
 
         <div class="width">
         <h1>What to expect from a Corsify course</h1>
