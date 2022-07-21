@@ -531,7 +531,9 @@ main.expect-from-coursify .dark-mode {
 /* ******************** */
 .expect-from-coursify {
   text-align: center;
-  margin-top: 100px;
+  margin: 100px 0;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
 }
 
 .expect-from-coursify h1 {
@@ -1075,11 +1077,16 @@ li {
 
 main {
   margin-top: -20px;
-  padding: 20px;
   min-height: 100%;
   background-color: #f2f2f2;
 }
 
+.width {
+  width: 85%;
+  margin: 0 auto;
+  height: auto;
+  padding: 50px 0;
+}
 .home-hero-section-first {
   width: 100%;
   height: auto;
