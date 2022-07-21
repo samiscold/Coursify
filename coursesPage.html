@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/style-responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script type="importmap">
           {
             "imports": {
@@ -113,6 +114,11 @@
                 <h4 class="less disable">Lesson</h4>
                 <h4 class="qa disable">Quize</h4>
             </div>
+
+            <!--  -->
+            <!-- Introduction PART -->
+            <!--  -->
+
             <div class="col-2">
                 <div class="introduction">
                     <h4>Introduction</h4>
@@ -179,6 +185,13 @@
                         </a>
                     </div>
                 </div>
+
+
+                <!--  -->
+                <!-- Lesson PART -->
+                <!--  -->
+
+
                 <div class="lesson hidden">
                     <h4>Lessons</h4>
                     <div class="lesson-1">
@@ -246,16 +259,16 @@
                             </a>
                         </div>
                     </div>
-                    <div class="lesson-2 hidden" >
+                    <div class="lesson-2 hidden">
                         <p>
                             Teksti <br>
-                            <ul>
-                                <li>• Si e adresojmë tesktin në ueb? </li>
-                                <li>• Cilat tags?</li>
-                                <li>• Si e stilizojmë?</li>
-                                <li>• Cka janë etiketat semnatike në ueb «semantic tags». Tregoni disa shembuj?</li>
-                                <li>• Çka janë etiketat prezentuese në ueb, Tregoni disa shembuj.</li>
-                            </ul>
+                        <ul>
+                            <li>• Si e adresojmë tesktin në ueb? </li>
+                            <li>• Cilat tags?</li>
+                            <li>• Si e stilizojmë?</li>
+                            <li>• Cka janë etiketat semnatike në ueb «semantic tags». Tregoni disa shembuj?</li>
+                            <li>• Çka janë etiketat prezentuese në ueb, Tregoni disa shembuj.</li>
+                        </ul>
                         </p> <br>
                         <p>
                             Etiketat Semantike
@@ -264,18 +277,83 @@
                         <div class="buttons">
                             <a href="#intro">
                                 <button class="backLesson courseBtn">Back</button>
-                            <button class="quizeButton courseBtn" href="#intro">Take The Quiz</button>
+                                <button class="quizeButton courseBtn" href="#intro">Take The Quiz</button>
                             </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- --------- -->
+                <!-- Quiz PART -->
+                <!-- --------- -->
+
                 <div class="quize hidden">
                     <h4>Quizes</h4>
+
+                    <div class="intro-quiz">
+                        <p>Kuizi do te zgjate <span>10 minuta</span> ku do te jene <span>6 pyetje</span></p>
+                        <p>Pas fillimit te kuizit koha do te filloj, nese nuk arrini te perfundoni ne kohe kuizin
+                            plotesisht, atehere programi do te llogaris pyetjet e zbrazera si <span>GABIM</span> !</p>
+
+                        <p>Total pergjigje te sakta dhe gabuara do te shfaqen pasi te klikoni tek butoni
+                            <span><b>Perfundo</b></span></p>
+
+                        <a class="startQuiz">
+                            <button class="button-primary ">
+                                Fillo kuizin
+                            </button>
+                        </a>
+                    </div> 
+
+                    <!-- Quize part -->
+
+
+                    <div class="quizes-part hidden">
+                        <div class="quiz-header">
+                            <h3>Kuzi</h3>
+                            <div class="timer">
+                                <div class="time_left_txt">Time Left</div>
+                                <div class="timer_sec"></div>
+                            </div>
+                            <!-- <div class="time_line"></div> -->
+                        </div>
+                        <section>
+                            <div class="panel">
+                                <div class="result hidden"> </div>
+                                <div class="question-container" id="question"> Question goes here. </div>
+                                <div class="option-container">
+                                  <button class="option" id="op1">option1</button>
+                          
+                                  <button class="option" id="op2">option2</button>
+                          
+                                  <button class="option" id="op3">option3</button>
+                          
+                                  <button class="option" id="op4">option4</button>
+                                </div>
+                                <div class="navigation">
+                                  <button class="evaluate hidden">Evaluate</button>
+                                  <button class="nextB button-primary">Next</button>
+                                  <button class="finish button-primary hidden">Perfundo</button>
+                                </div>
+                              </div>
+                        </section>
+
+
+                        <section>
+                            <div class="scores hidden">
+                                <h2> Pergjigjet e sakta: <span id="score"></span></h2>
+                                <canvas id="myChart" style="height: 200px;"></canvas>
+                            </div>
+                        </section>
+                    </div>
+
+
+
+                    
+
                 </div>
             </div>
-
         </section>
-
         <!--  -->
 
 
@@ -315,6 +393,8 @@
         <script src="assets/scripts/logs.js"></script>
         <script src="assets/scripts/search.js"></script>
         <script src="assets/scripts/courses.js"></script>
+        <!-- <script src="assets/scripts/quize.js"></script> -->
+        <script src="assets/scripts/quize.js"></script>
 
     </body>
 

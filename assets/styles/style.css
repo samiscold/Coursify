@@ -189,6 +189,15 @@ header {
   padding: 0 30px;
 }
 
+.quize p {
+  display: block;
+  width: 100%;
+}
+
+.quize span {
+  color: #ee6001;
+}
+
 /* ****** */
 /* Slider */
 /* ****** */
@@ -357,6 +366,12 @@ main.dark-mode .start-project a button {
 main.dark-mode .start-learning a button,
 main.dark-mode .start-project a button {
   border: 1px solid white !important;
+}
+
+main.dark-mode .start-learning a button:hover,
+main.dark-mode .start-project a button:hover {
+  border: 1px solid #ee6001 !important;
+  color: #ee6001 !important;
 }
 
 main.expect-from-coursify .dark-mode {
@@ -1108,8 +1123,11 @@ main {
   margin-right: 1%;
 }
 
-/* header/navbar music icon + animation 
- */
+.button-primary:hover {
+  color: white;
+}
+
+/* header/navbar music icon + animation */
 .loader {
   display: flex;
   align-items: center;
@@ -1266,6 +1284,75 @@ p,
 
 .course-hero-section-first p {
   font-size: 1.2rem;
+}
+
+/*  */
+/* Quiz part */
+/*  */
+
+.quize {
+  width: 100%;
+}
+
+.quizes-part {
+  background-color: #d7d7d7;
+  /* width: 900px; */
+  width: 100%;
+}
+
+.quizes-part .quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  padding-top: 15px;
+}
+
+.quiz-header .timer div {
+  display: inline;
+}
+
+.quiz-header h3 {
+  color: #ee6001;
+}
+
+.quiz-header .timer_sec {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  background: #ee6001;
+  user-select: none;
+}
+
+.panel {
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.option-container {
+  margin-top: 20px;
+}
+
+.option {
+  border: 1px solid #ee6001;
+  background-color: transparent;
+  color: #ee6001;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Chart score */
+.scores {
+  text-align: center;
+}
+
+.scores canvas {
+  align-items: center;
+  text-align: center;
 }
 
 /* footer  */
