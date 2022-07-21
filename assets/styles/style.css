@@ -939,7 +939,7 @@ table tr td {
 }
 
 footer {
-  height: 60vh;
+  height: auto;
   background: black;
   display: flex;
   justify-content: center;
@@ -975,7 +975,7 @@ footer li a:hover {
   color: #ee6001;
 }
 footer li {
-  margin: 50px 0;
+  margin: 10px 0;
 }
 
 .social-icons {
