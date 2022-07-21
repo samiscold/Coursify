@@ -90,14 +90,14 @@ quizeButton.addEventListener('click', () => {
 
 
 // TEST PART BUG: SHOULD DELETE IN THE END
-quizeActive.addEventListener('click', () => {
-    quizeActive.classList.add('active')
-    quize.classList.remove('hidden')
+// quizeActive.addEventListener('click', () => {
+//     quizeActive.classList.add('active')
+//     quize.classList.remove('hidden')
 
-    lessonActive.classList.remove('active')
-    lesson.classList.add('hidden')
-    introActive.classList.remove('active')
-    introduction.classList.add('hidden')
-})
+//     lessonActive.classList.remove('active')
+//     lesson.classList.add('hidden')
+//     introActive.classList.remove('active')
+//     introduction.classList.add('hidden')
+// })
 // *******************************************
 

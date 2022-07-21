@@ -11,41 +11,41 @@ startQuiz.addEventListener('click', goToQuiz)
 
 const Questions = [{
     id: 0,
-    q: "Qka eshte HTML ?",
-    a: [{ text: "Hyper Text Preprocessor", isCorrect: false },
-    { text: "Hyper Text Multiple Language", isCorrect: false },
-    { text: "Hyper Text Markup Language", isCorrect: true },
-    { text: "Hyper Tool Multi Language", isCorrect: false }
+    q: "Qka eshte DPR ?",
+    a: [{ text: "Developer", isCorrect: false },
+    { text: "Develop pro", isCorrect: false },
+    { text: "Device-pixel-ratio", isCorrect: true },
+    { text: "Developemt pixel ratio", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "Qka eshte CSS ?",
-    a: [{ text: "Common Style Sheet", isCorrect: false, },
-    { text: "Colorful Style Sheet", isCorrect: false },
-    { text: "Computer Style Sheet", isCorrect: false },
-    { text: "Cascading Style Sheet", isCorrect: true }
+    q: "Cili eshte me i mir Spotify vs Apple Music ?",
+    a: [{ text: "Apple Music", isCorrect: false, },
+    { text: "Asnjera", isCorrect: false },
+    { text: "Spotify", isCorrect: false },
+    { text: "Nje Zot e di", isCorrect: true }
     ]
 
 },
 {
     id: 2,
-    q: "Si behet nje koment ne HTML ?",
-    a: [{ text: "<-- -->", isCorrect: false },
-    { text: "<?-- -->", isCorrect: false },
-    { text: "<!-- -->", isCorrect: true },
-    { text: "/* */", isCorrect: false }
+    q: "Sa eshte per CD bitrate? ?",
+    a: [{ text: "1501 kb/s", isCorrect: false },
+    { text: "1211 kb/s", isCorrect: false },
+    { text: "1411 kb/s", isCorrect: true },
+    { text: "1800 kb/s", isCorrect: false }
     ]
 
 },
 {
     id: 3,
-    q: "Si behet nje koment ne CSS ?",
-    a: [{ text: "<-- -->", isCorrect: false },
-    { text: "/* */", isCorrect: true },
-    { text: "<!-- -->", isCorrect: false },
-    { text: "<?-- -->", isCorrect: true }
+    q: "Cili format preferohet per Web ?",
+    a: [{ text: "JPG", isCorrect: false },
+    { text: "SVG", isCorrect: true },
+    { text: "WebP", isCorrect: false },
+    { text: "PNG", isCorrect: false }
     ]
 
 },
@@ -56,6 +56,16 @@ const Questions = [{
     { text: "Red Green Background", isCorrect: false },
     { text: "Red Green Blur", isCorrect: false },
     { text: "Range Go Blue", isCorrect: false }
+    ]
+
+},
+{
+    id: 5,
+    q: "Bashkësia më e popullarizuar e ngjyrave primare për burim drite ndriçues përmban: të kuqen (Red) , të gjelbrën (Green), të kaltrën (Blue)",
+    a: [{ text: "True", isCorrect: true },
+    { text: "False", isCorrect: false },
+    { text: null, isCorrect: null },
+    { text: null, isCorrect: null }
     ]
 
 },
@@ -74,10 +84,12 @@ function iterate(id) {
     result[0].innerText = "";
 
     // Getting the question
+    const questionNum = document.getElementById("questionNum");
     const question = document.getElementById("question");
 
 
     // Setting the question text
+    questionNum.innerHTML = "Pyetja " + (Questions[id].id + 1) + ": "
     question.innerText = Questions[id].q;
 
     // Getting the options
@@ -92,6 +104,14 @@ function iterate(id) {
     op2.innerText = Questions[id].a[1].text;
     op3.innerText = Questions[id].a[2].text;
     op4.innerText = Questions[id].a[3].text;
+
+    if (Questions[id].a[2].text == null) {
+        op3.classList.add('hidden')
+        op4.classList.add('hidden')
+    } else {
+        op3.classList.remove('hidden')
+        op4.classList.remove('hidden')
+    }
 
     // Providing the true or false value to the options
     op1.value = Questions[id].a[0].isCorrect;
@@ -189,7 +209,6 @@ nextB.addEventListener("click", () => {
     } else {
         wrongAns++;
     }
-    console.log(correctAns, wrongAns);
     if (id < Questions.length - 1) {
         id++;
         iterate(id);
