@@ -134,7 +134,7 @@ header {
 }
 
 .active-nav {
-  color: #fea500 !important;
+  color: #ee6001 !important;
 }
 
 /* Hambuger menu */
@@ -954,13 +954,14 @@ footer .row {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 footer .breaker {
   background-color: #ee6001;
   width: 100%;
-  height: 2px;
-  margin-top: 50px;
+  height: 1px;
+  margin: 15px 0;
 }
 footer .row span {
   color: rgb(188, 188, 188);
