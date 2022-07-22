@@ -1,9 +1,9 @@
 
 let likeButton = document.querySelector('.fa-thumbs-up');
-
+// likeButton.style.color = "black";
 
 likeButton.addEventListener('click', () => {
-  likeButton.style.color = "#ee6001"
+  likeButton.classList.toggle('like-color')
 })
 
 function buttonContinue() {
