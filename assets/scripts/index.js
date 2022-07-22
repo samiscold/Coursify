@@ -1,4 +1,11 @@
 
+let likeButton = document.querySelector('.fa-thumbs-up');
+
+
+likeButton.addEventListener('click', () => {
+  likeButton.style.color = "#ee6001"
+})
+
 function buttonContinue() {
   let x = document.getElementById("intro-section");
   x.style.transform = 'translate(0,-100%)'
@@ -104,6 +111,5 @@ function toggleDarkLight() {
     fa_moon.style.color = "white"
   }
 }
-
 
 
