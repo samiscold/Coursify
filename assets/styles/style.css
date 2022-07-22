@@ -865,6 +865,7 @@ table tr td {
 
 ::-webkit-scrollbar {
   width: 18px;
+  background-color: #222;
 }
 
 /* Track */
