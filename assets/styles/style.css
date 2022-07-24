@@ -327,6 +327,13 @@ button[disabled]:hover {
   }
 }
 
+marquee {
+  background-color: #ee6001;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
 /* *************** */
 /* Dark Light Mode */
 /* *************** */
