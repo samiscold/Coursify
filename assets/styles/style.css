@@ -440,11 +440,71 @@ main.dark-mode .expect-from-coursify {
 .course-box {
   position: relative;
   width: 23%;
-  height: 600px;
+  height: 570;
   /* margin-left: 35px; */
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: white;
+}
+
+.course-box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.course-box span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+/* .course-box span:nth-child(2) {
+  transform: rotate(90deg);
+} */
+
+/* .course-box span:nth-child(3) {
+  transform: rotate(180deg);
+} */
+
+/* .course-box span:nth-child(4) {
+  transform: rotate(270deg);
+} */
+
+.course-box span:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 96, 1, 1) 0%,
+    rgba(255, 111, 15, 1) 50%,
+    rgba(255, 191, 148, 1) 100%
+  );
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50.1% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
 }
 
 .course-box .image img {
@@ -698,12 +758,33 @@ body {
   background-color: #f2f2f2;
 }
 
-.project-details {
+.bc-img {
+  background-image: url('../images/net.webp');
+}
+
+.project-details .social-details {
+  color: white;
+}
+
+.project-details a,
+.project-details a button {
+  text-decoration: none;
+  color: white;
+}
+
+.project-details,
+.project-details button {
   width: 24%;
   margin-top: 20px;
   display: inline;
-  background-color: white;
   transition: transform 0.2s;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .project-details:hover {
