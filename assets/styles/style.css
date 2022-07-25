@@ -1402,3 +1402,55 @@ p,
 }
 
 /* footer  */
+
+
+/* Error Page  */
+
+.error-page-section {
+  height: 70vh;
+  background-color: #c45002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  align-self: center;
+ 
+}
+
+.content img { 
+  width: 100px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color:white;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 80vw;
+  height: auto;
+  padding:20px;
+  text-align: center;
+}
+
+
+.content h2 {
+  font-size: 3rem;
+  color:white;
+}
+.content h4{
+color:gray;
+font-size: 1rem;
+}
+
+.content p {
+  font-size: 1rem;
+}
+
+.content a {
+  color:white;
+  margin:10px;
+}
