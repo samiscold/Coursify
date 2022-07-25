@@ -253,7 +253,7 @@ button[disabled]:hover {
 }
 
 .buttons {
-  text-align: right;
+  margin:20px auto !important;
 }
 
 .courseBtn {
@@ -464,27 +464,13 @@ main.dark-mode .expect-from-coursify {
   box-sizing: border-box;
 }
 
-.course-box span:nth-child(1) {
-  transform: rotate(0deg);
-}
-
-/* .course-box span:nth-child(2) {
-  transform: rotate(90deg);
-} */
-
-/* .course-box span:nth-child(3) {
-  transform: rotate(180deg);
-} */
-
-/* .course-box span:nth-child(4) {
-  transform: rotate(270deg);
-} */
 
 .course-box span:before {
   content: '';
   position: absolute;
   width: 100%;
-  height: 4px;
+  height: 3px;
+  bottom:0;
   background: radial-gradient(
     circle,
     rgba(238, 96, 1, 1) 0%,
@@ -553,7 +539,7 @@ main.dark-mode .expect-from-coursify {
   font-size: 13px;
   margin: 20px 30px;
   color: #999;
-  height: 130px;
+  /* height: 130px; */
   max-height: 130px;
 }
 
@@ -622,8 +608,8 @@ main.dark-mode .expect-from-coursify {
 }
 
 .opacity {
-  opacity: 0.5;
-  filter: grayscale(90%);
+  opacity: 0.15;
+  filter: grayscale(100%);
   pointer-events: none;
 }
 
@@ -1215,15 +1201,22 @@ main {
 .home-hero-section-first {
   width: 100%;
   height: auto;
-  background-color: #f8f8f8;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   align-self: center;
-  background: url(/assets/images/coursify-hero.jpg);
   background-position: center center;
   padding: 50px 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-hero-section-first img{ 
+width: 300px;
 }
 
 .home-hero-section-first h1,
@@ -1542,3 +1535,50 @@ font-size: 1rem;
   color:white;
   margin:10px;
 }
+
+
+/* animation */
+
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #c45002 solid 1px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+  animation-fill-mode: forwards;
+}
+
