@@ -1014,6 +1014,11 @@ footer li {
   margin: 10px 0;
 }
 
+.intro-footer {
+  display: flex;
+  justify-content: center;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
