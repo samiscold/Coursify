@@ -24,6 +24,7 @@ body {
   width: 85%;
   margin: 0 auto;
   background: transparent;
+  position: relative;
 }
 
 h1,
@@ -1176,6 +1177,7 @@ table tr td {
   background-position: 0% 100%;
 }
 
+
 .coursify-section-intro p {
   margin: 0;
   padding: 0;
@@ -1566,8 +1568,7 @@ main {
   padding: 50px 0;
 }
 
-.project-hero-section-first h1,
-p,
+.project-hero-section-first
 .buttons {
   width: 85%;
   margin: 0 auto;
@@ -1578,9 +1579,7 @@ p,
   margin-bottom: 1.2%;
 }
 
-.project-hero-section-first p {
-  font-size: 1.2rem;
-}
+
 
 .course-hero-section-first {
   width: 100%;
@@ -1595,7 +1594,6 @@ p,
 }
 
 .course-hero-section-first h1,
-p,
 .buttons {
   width: 85%;
   margin: 0 auto;
@@ -1775,4 +1773,15 @@ p,
   -webkit-animation-name: hvr-ripple-out;
   animation-name: hvr-ripple-out;
   animation-fill-mode: forwards;
+}
+
+
+.widgets {
+  padding:20px;
+  background: white;
+  border:3px solid #faa433;
+  position: absolute;
+  right:50px;
+  top:50px;
+  border-radius: 5px;
 }
