@@ -55,6 +55,7 @@ h6 {
   width: 80px;
   height: 80px;
 }
+
 .loader:after {
   content: ' ';
   display: block;
@@ -913,6 +914,81 @@ body {
 .project .button-secondary:hover {
   border: 1px solid #ee6001;
   color: #ee6001;
+}
+
+.project-box {
+  position: relative;
+  width: 23%;
+  height: 300px;
+  /* background-color: red; */
+  border-radius: 30px;
+}
+
+.project-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.project-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  border-radius: 50px 0 30px 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transform: translateY(0);
+  transition: 0.2s ease-in-out;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.project-content .btn-center {
+  margin-top: 20px;
+}
+
+.project-content a button {
+  color: white;
+  margin-left: 20%;
+  width: 60%;
+  text-align: center;
+  padding: 10px 8px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+}
+
+.project-content a button:hover {
+  color: #ee6001;
+  border-bottom: 1px solid #ee6001;
+}
+
+.project-content a,
+.project-content h6 {
+  text-decoration: none;
+  color: white;
+}
+
+.project-content h3,
+.project-content h6 {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.project-content span {
+  color: #ee6001;
+}
+
+.project-box:hover .project-content {
+  height: 130px;
 }
 
 /* ******************** */
