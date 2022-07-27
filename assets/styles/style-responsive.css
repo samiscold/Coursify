@@ -33,17 +33,25 @@
     margin-bottom: 200px;
   }
 
+  .expect-from-coursify .width {
+    margin-top: -100px;
+  }
+
   .expect-from-coursify .efc {
-    margin-top: 120px;
+    margin-top: 100px;
   }
 
   .efc .text h4 {
     margin-left: 20px;
   }
 
+  .efc .text p {
+    margin-left: 20px;
+  }
+
   .efc-1,
   .efc-2 {
-    margin-top: -40px;
+    margin-top: -60px;
   }
   .project .course-box .student i {
     margin-left: -130px;
@@ -125,8 +133,16 @@
     display: block !important;
   }
 
+  .expect-from-coursify {
+    height: 900px;
+  }
+
   .efc .text {
     width: 100%;
+  }
+
+  .efc .text p {
+    margin-left: 20px;
   }
 
   .efc {
