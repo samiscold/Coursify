@@ -548,7 +548,7 @@ main.dark-mode .expect-from-coursify {
   background-color: white;
 }
 
-.course-box span {
+.course-box span.animated {
   position: absolute;
   top: 0;
   left: 0;
@@ -558,7 +558,7 @@ main.dark-mode .expect-from-coursify {
   box-sizing: border-box;
 }
 
-.course-box span:before {
+.course-box span.animated:before {
   content: '';
   position: absolute;
   width: 100%;
