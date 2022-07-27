@@ -1159,6 +1159,26 @@ table tr td {
   background-position: 0% 100%;
 }
 
+.coursify-login-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #000000 0%,
+    #c45002 100%
+  );
+  animation: gradient 2s backwards;
+  background-size: 600%;
+  background-position: 0% 100%;
+}
+
 .coursify-section-intro h1 {
   font-weight: bolder;
   font-size: 72px;

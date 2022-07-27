@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/styles/style-responsive.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script type="importmap">
-          {
+        {
             "imports": {
               "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.69/build/runtime.js"
             }
@@ -75,12 +75,13 @@
                                 document.getElementById('username').innerHTML = user;
                             </script>
                         </label>
-                        <button type="button" class="dark-light" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">
+                        <button type="button" class="dark-light" name="dark_light" onclick="toggleDarkLight()"
+                            title="Toggle dark/light mode">
                             <span id="D-L">Light</span>
                             <i class="fa fa-moon"></i>
-                          </button>
+                        </button>
                     </p>
-                    
+
 
 
 
@@ -113,297 +114,300 @@
 
         <!-- Section -->
         <main id="bodys" class="light-mode">
-        <section class="courses-content width-page">
+            <section class="courses-content width-page">
 
-            <div class="col-1">
-                <h4 class="intro active" id="intro">Introduction</h4>
-                <h4 class="less disable">Lesson</h4>
-                <h4 class="qa disable">Quize</h4>
-            </div>
-
-            <!--  -->
-            <!-- Introduction PART -->
-            <!--  -->
-
-            <div class="col-2">
-                <div class="introduction">
-                    <h4>Introduction</h4>
-                    <video src="assets/videos/videoIntro.mp4" controls></video>
-                    <p>
-                        <strong>Çka është Multimedia?</strong>
-                        <br>→ është media e cila përdorë shumë forma të prezantimit dhe procesimit të informatës.
-                        <br><br>
-                        Cilat janë elementet thelbësore multimediale? <br>
-                    <ul>
-                        <li>• Teksti</li>
-                        <li>• Grafika</li>
-                        <li>• Animacionet</li>
-                        <li>• Video</li>
-                        <li>• Audio</li>
-                    </ul>
-                    </p>
-                    <p>
-                        <br><strong>Teksti</strong><br>
-                        →karakteret që perdorën për të krijuar fjalë, fjali dhe paragrafë.
-                    </p>
-                    <p>
-                        <br><strong>Grafika</strong><br>
-                        → Paraqitje digjitale jo-tekstuale e informatës, sikurse një vizatim, imazh, apo
-                        graf.
-                    </p>
-                    <br>
-                    <p><strong>Animacioni</strong><br>
-                        →një seri e vizatimeve që lejnë përshtypjen e lëvizjes
-                        Video
-                        → Një seri e imazheve (fotografike) që prezentohen me minimum 15 imazhe pë
-                        sekond dhe lejnë pështypjen e lëvizjes</p><br>
-                    <p><strong>Audio</strong><br>
-                        →të folurit, muzikë apo çfardo tingulli.</p><br>
-                    <p><strong>Kategorizimi</strong><br>
-                    <ul>
-                        <li>• Lineare</li>
-                        – Konsumatori nuk ka ndonjë kontrollë mbi procesin multimedial
-                        → Kinemaja
-                        <li>• Jo-Lineare</li>
-                        – Përdor interaktivitetin për kontrolle të përjetimit multimedial.
-                    </ul>
-
-                    </p><br>
-                    <p><strong>Perceptimi – si shohim</strong><br>
-                        Dy tipe të ndryshme të foto-receptorëve <br>
-                    <ul>
-                        <li> • Thuprat – afër 100,000,000 </li>
-                        <li> • Boçat- afër 5,000,000 </li>
-                        <li> • Boçat: ‘day vision’, të ndjeshëm në ngjyrë</li>
-                        <li> • Red(long), green(medium), and blue(small) cones</li>
-                        <li> • Different cones have different frequency responses</li>
-                        <li> • Tri-receptor theory of color vision [Young1802] </li>
-                        <li> • Thuprat: ‘night vision’, të ndjeshëm në (brightness) only </li>
-                        <li> • Rod- Thuper, shkopth</li>
-                        <li> • Cone - boçë</li>
-                    </ul>
-                    </p>
-                    <p>
-                        Introduction mund ta bëni edhe
-                    <a class="download" href="assets/doc/intro.pdf" download="assets/doc/intro.pdf">Download in PDF</a>
-                    </p>
-                    <div class="buttons">
-                        <a href="#intro">
-                            <button class="courseBtn startButton"> Start Lessons </button>
-                        </a>
-                    </div>
+                <div class="col-1">
+                    <h4 class="intro active" id="intro">Introduction</h4>
+                    <h4 class="less disable">Lesson</h4>
+                    <h4 class="qa disable">Quize</h4>
                 </div>
 
-
                 <!--  -->
-                <!-- Lesson PART -->
+                <!-- Introduction PART -->
                 <!--  -->
 
-
-                <div class="lesson hidden">
-                    <h4>Lessons</h4>
-                    <div class="lesson-1">
+                <div class="col-2">
+                    <div class="introduction">
+                        <h4>Introduction</h4>
+                        <video src="assets/videos/videoIntro.mp4" controls></video>
                         <p>
-                            <strong>
-                                Perceptimi
-                            </strong><br>
-                            <img src="assets/images/coursesPhoto.png" alt=""><br>
-                        </p><br>
-
-
-                        <table>
-                            <tr>
-                                <th>Cone type</th>
-                                <th>Name</th>
-                                <th>Range</th>
-                                <th>Peak Wavelength</th>
-                            </tr>
-                            <tr>
-                                <td>S</td>
-                                <td>β</td>
-                                <td>400-500 nm </td>
-                                <td>420-440 nm</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>γ</td>
-                                <td>450–630 nm</td>
-                                <td>534–555 nm</td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>ρ</td>
-                                <td>500–700 nm</td>
-                                <td>564–580 nm</td>
-                            </tr>
-                        </table>
-
-
-
-                        <p>
-                            <strong>Modelet e ngjyrave</strong><br>
-                            Bashkësia më e popullarizuar e ngjyrave primare për burim drite
-                            ndriçues përmban: të kuqen (Red) , të gjelbrën (Green), të kaltrën
-                            (Blue)
-                            → RGB, (model aditiv i ngjyrës - additive color model) <br>
-                            • Bashkësia më e popullarizuar e ngjyrave primare për burim drite
-                            reflektues përmban: tyrkis/kaltër?(Cyan) , të purpurtën
-                            (Magenta), të verdhën (Yellow)
-                            → RGB, (model aditiv i ngjyrës - additive color model) <br>
-                        </p><br>
-                        <p>
-                            <strong>Modelet e ngjyrave sipas aplikimit</strong><br>
-                            Cili model aplikohet ne video(screen) e cili ne shtyp?
-                        <ul>
-                            <li>CMY (K) Model per ngjyra ne shtyp</li>
-                            <li>• RGB monitora, grafike kompjuterike</li>
-                        </ul>
-                        </p>
-                        <br>
-                        <div class="buttons">
-                            <!-- <button class="backLesson" disabled>Back</button> -->
-                            <a href="#intro">
-                                <button class="nextLesson courseBtn" href="#intro">Next</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="lesson-2 hidden">
-                        <p>
-                            <strong>Teksti</strong> <br>
-                        <ul>
-                            <li>• Si e adresojmë tesktin në ueb? </li>
-                            <li>• Cilat tags?</li>
-                            <li>• Si e stilizojmë?</li>
-                            <li>• Cka janë etiketat semnatike në ueb «semantic tags». Tregoni disa shembuj?</li>
-                            <li>• Çka janë etiketat prezentuese në ueb, Tregoni disa shembuj.</li>
-                        </ul>
-                        </p> <br>
-                        <p>
-                            <strong>Etiketat Semantike</strong><br>
-                                < div >, < p >, < ul >< ol >, < article >, < header >
-                            
-                        </p> <br>
-
-                        <p>
-                            <strong>Familjet e fonteve</strong>
+                            <strong>Çka është Multimedia?</strong>
+                            <br>→ është media e cila përdorë shumë forma të prezantimit dhe procesimit të informatës.
+                            <br><br>
+                            Cilat janë elementet thelbësore multimediale? <br>
                             <ul>
-                                <li>Sans serif</li>
-                                <li>Serif</li>
-                                <li>Monospace</li>
-                                <li>Cursive</li>
+                                <li>• Teksti</li>
+                                <li>• Grafika</li>
+                                <li>• Animacionet</li>
+                                <li>• Video</li>
+                                <li>• Audio</li>
                             </ul>
                         </p>
                         <p>
-                            <strong>Disa udhëzime</strong> <br>
-                        
-•Use Sans serif for web and serif for print <br>
-•Use Monospace for typewriter and code <br>
-•Use Script and fantasy fonts only for accents <br>
-•Do not use more than 3-4 different fonts on any one page <br>
-•Do not change the font in the middle of the sentence <br>
-    
+                            <br><strong>Teksti</strong><br>
+                            →karakteret që perdorën për të krijuar fjalë, fjali dhe paragrafë.
+                        </p>
+                        <p>
+                            <br><strong>Grafika</strong><br>
+                            → Paraqitje digjitale jo-tekstuale e informatës, sikurse një vizatim, imazh, apo
+                            graf.
                         </p>
                         <br>
-                        <p>
-                            <strong>Çka është një imazh (dixhital)?</strong> <br>
-                            An image (from Latin: imago) is an artifact that depicts visual perception, such
-as a photograph or other two-dimensional picture, particularly one that
-resembles a subject (usually a physical object). In the context of signal
-processing, an image is a distributed amplitude of color(s)
-                        </p>
+                        <p><strong>Animacioni</strong><br>
+                            →një seri e vizatimeve që lejnë përshtypjen e lëvizjes
+                            Video
+                            → Një seri e imazheve (fotografike) që prezentohen me minimum 15 imazhe pë
+                            sekond dhe lejnë pështypjen e lëvizjes</p><br>
+                        <p><strong>Audio</strong><br>
+                            →të folurit, muzikë apo çfardo tingulli.</p><br>
+                        <p><strong>Kategorizimi</strong><br>
+                            <ul>
+                                <li>• Lineare</li>
+                                – Konsumatori nuk ka ndonjë kontrollë mbi procesin multimedial
+                                → Kinemaja
+                                <li>• Jo-Lineare</li>
+                                – Përdor interaktivitetin për kontrolle të përjetimit multimedial.
+                            </ul>
 
+                        </p><br>
+                        <p><strong>Perceptimi – si shohim</strong><br>
+                            Dy tipe të ndryshme të foto-receptorëve <br>
+                            <ul>
+                                <li> • Thuprat – afër 100,000,000 </li>
+                                <li> • Boçat- afër 5,000,000 </li>
+                                <li> • Boçat: ‘day vision’, të ndjeshëm në ngjyrë</li>
+                                <li> • Red(long), green(medium), and blue(small) cones</li>
+                                <li> • Different cones have different frequency responses</li>
+                                <li> • Tri-receptor theory of color vision [Young1802] </li>
+                                <li> • Thuprat: ‘night vision’, të ndjeshëm në (brightness) only </li>
+                                <li> • Rod- Thuper, shkopth</li>
+                                <li> • Cone - boçë</li>
+                            </ul>
+                        </p>
+                        <p>
+                            Introduction mund ta bëni edhe
+                            <a class="download" href="assets/doc/intro.pdf" download="assets/doc/intro.pdf">Download in
+                                PDF</a>
+                        </p>
                         <div class="buttons">
                             <a href="#intro">
-                                <button class="backLesson courseBtn">Back</button>
-                                <button class="quizeButton courseBtn">Take The Quiz</button>
+                                <button class="courseBtn startButton"> Start Lessons </button>
                             </a>
                         </div>
                     </div>
-                </div>
-
-                <!-- --------- -->
-                <!-- Quiz PART -->
-                <!-- --------- -->
-
-                <div class="quize hidden">
-                    <h4>Quizes</h4>
-
-                    <div class="intro-quiz">
-                        <p>Kuizi do te zgjate <span>10 minuta</span> ku do te jene <span>6 pyetje</span></p>
-                        <p>Pas fillimit te kuizit koha do te filloj, nese nuk arrini te perfundoni ne kohe kuizin
-                            plotesisht, atehere programi do te llogaris pyetjet e zbrazera si <span>GABIM</span> !</p>
-
-                        <p>Total pergjigje te sakta dhe gabuara do te shfaqen pasi te klikoni tek butoni
-                            <span><b>Perfundo</b></span>
-                        </p>
-
-                        <a class="startQuiz">
-                            <button class="button-primary ">
-                                Fillo kuizin
-                            </button>
-                        </a>
-                    </div>
-
-                    <!-- Quize part -->
 
 
-                    <div class="quizes-part hidden">
-                        <div class="quiz-header">
-                            <h3>Kuzi</h3>
-                            <div class="timer">
-                                <div class="time_left_txt">Time Left</div>
-                                <div class="timer_sec">600</div>
+                    <!--  -->
+                    <!-- Lesson PART -->
+                    <!--  -->
+
+
+                    <div class="lesson hidden">
+                        <h4>Lessons</h4>
+                        <div class="lesson-1">
+                            <p>
+                                <strong>
+                                    Perceptimi
+                                </strong><br>
+                                <img src="assets/images/coursesPhoto.png" alt=""><br>
+                            </p><br>
+
+
+                            <table>
+                                <tr>
+                                    <th>Cone type</th>
+                                    <th>Name</th>
+                                    <th>Range</th>
+                                    <th>Peak Wavelength</th>
+                                </tr>
+                                <tr>
+                                    <td>S</td>
+                                    <td>β</td>
+                                    <td>400-500 nm </td>
+                                    <td>420-440 nm</td>
+                                </tr>
+                                <tr>
+                                    <td>M</td>
+                                    <td>γ</td>
+                                    <td>450–630 nm</td>
+                                    <td>534–555 nm</td>
+                                </tr>
+                                <tr>
+                                    <td>L</td>
+                                    <td>ρ</td>
+                                    <td>500–700 nm</td>
+                                    <td>564–580 nm</td>
+                                </tr>
+                            </table>
+
+
+
+                            <p>
+                                <strong>Modelet e ngjyrave</strong><br>
+                                Bashkësia më e popullarizuar e ngjyrave primare për burim drite
+                                ndriçues përmban: të kuqen (Red) , të gjelbrën (Green), të kaltrën
+                                (Blue)
+                                → RGB, (model aditiv i ngjyrës - additive color model) <br>
+                                • Bashkësia më e popullarizuar e ngjyrave primare për burim drite
+                                reflektues përmban: tyrkis/kaltër?(Cyan) , të purpurtën
+                                (Magenta), të verdhën (Yellow)
+                                → RGB, (model aditiv i ngjyrës - additive color model) <br>
+                            </p><br>
+                            <p>
+                                <strong>Modelet e ngjyrave sipas aplikimit</strong><br>
+                                Cili model aplikohet ne video(screen) e cili ne shtyp?
+                                <ul>
+                                    <li>CMY (K) Model per ngjyra ne shtyp</li>
+                                    <li>• RGB monitora, grafike kompjuterike</li>
+                                </ul>
+                            </p>
+                            <br>
+                            <div class="buttons">
+                                <!-- <button class="backLesson" disabled>Back</button> -->
+                                <a href="#intro">
+                                    <button class="nextLesson courseBtn" href="#intro">Next</button>
+                                </a>
                             </div>
-                            <!-- <div class="time_line"></div> -->
                         </div>
-                        <section>
-                            <div class="panel">
-                                <div class="result hidden"> </div>
-                                <div class="question-container">
-                                    <span id="questionNum"></span>
-                                    <div id="question"></div>
-                                </div>
-                                <div class="option-container">
-                                    <button class="option" id="op1">option1</button>
+                        <div class="lesson-2 hidden">
+                            <p>
+                                <strong>Teksti</strong> <br>
+                                <ul>
+                                    <li>• Si e adresojmë tesktin në ueb? </li>
+                                    <li>• Cilat tags?</li>
+                                    <li>• Si e stilizojmë?</li>
+                                    <li>• Cka janë etiketat semnatike në ueb «semantic tags». Tregoni disa shembuj?</li>
+                                    <li>• Çka janë etiketat prezentuese në ueb, Tregoni disa shembuj.</li>
+                                </ul>
+                            </p> <br>
+                            <p>
+                                <strong>Etiketat Semantike</strong><br>
+                                < div>, < p>, < ul>
+                                            < ol>, < article>, < header>
 
-                                    <button class="option" id="op2">option2</button>
+                            </p> <br>
 
-                                    <button class="option" id="op3">option3</button>
+                            <p>
+                                <strong>Familjet e fonteve</strong>
+                                <ul>
+                                    <li>Sans serif</li>
+                                    <li>Serif</li>
+                                    <li>Monospace</li>
+                                    <li>Cursive</li>
+                                </ul>
+                            </p>
+                            <p>
+                                <strong>Disa udhëzime</strong> <br>
 
-                                    <button class="option" id="op4">option4</button>
-                                </div>
-                                <div class="navigation">
-                                    <button class="evaluate hidden">Evaluate</button>
-                                    <button class="nextB button-primary">Next</button>
-                                    <button class="finish button-primary hidden">Perfundo</button>
-                                </div>
+                                •Use Sans serif for web and serif for print <br>
+                                •Use Monospace for typewriter and code <br>
+                                •Use Script and fantasy fonts only for accents <br>
+                                •Do not use more than 3-4 different fonts on any one page <br>
+                                •Do not change the font in the middle of the sentence <br>
+
+                            </p>
+                            <br>
+                            <p>
+                                <strong>Çka është një imazh (dixhital)?</strong> <br>
+                                An image (from Latin: imago) is an artifact that depicts visual perception, such
+                                as a photograph or other two-dimensional picture, particularly one that
+                                resembles a subject (usually a physical object). In the context of signal
+                                processing, an image is a distributed amplitude of color(s)
+                            </p>
+
+                            <div class="buttons">
+                                <a href="#intro">
+                                    <button class="backLesson courseBtn">Back</button>
+                                    <button class="quizeButton courseBtn">Take The Quiz</button>
+                                </a>
                             </div>
-                        </section>
-
-
-                        <section>
-                            <div class="scores hidden">
-                                <h2> Pergjigjet e sakta: <span id="score"></span></h2>
-                                <canvas id="myChart" style="height: 200px;"></canvas>
-                            </div>
-
-
-                            <h3>Get your certificate</h3>
-                            <label>Name:</label><input type="text" placeholder="name"> 
-                            <a href="#">Download</a>
-                            <canvas>
-
-                            </canvas>
-                        </section>
+                        </div>
                     </div>
 
+                    <!-- --------- -->
+                    <!-- Quiz PART -->
+                    <!-- --------- -->
+
+                    <div class="quize hidden">
+                        <h4>Quizes</h4>
+
+                        <div class="intro-quiz">
+                            <p>Kuizi do te zgjate <span>10 minuta</span> ku do te jene <span>6 pyetje</span></p>
+                            <p>Pas fillimit te kuizit koha do te filloj, nese nuk arrini te perfundoni ne kohe kuizin
+                                plotesisht, atehere programi do te llogaris pyetjet e zbrazera si <span>GABIM</span> !
+                            </p>
+
+                            <p>Total pergjigje te sakta dhe gabuara do te shfaqen pasi te klikoni tek butoni
+                                <span><b>Perfundo</b></span>
+                            </p>
+
+                            <a class="startQuiz">
+                                <button class="button-primary ">
+                                    Fillo kuizin
+                                </button>
+                            </a>
+                        </div>
+
+                        <!-- Quize part -->
+
+
+                        <div class="quizes-part hidden">
+                            <div class="quiz-header">
+                                <h3>Kuzi</h3>
+                                <div class="timer">
+                                    <div class="time_left_txt">Time Left</div>
+                                    <div class="timer_sec">600</div>
+                                </div>
+                                <!-- <div class="time_line"></div> -->
+                            </div>
+                            <section>
+                                <div class="panel">
+                                    <div class="result hidden"> </div>
+                                    <div class="question-container">
+                                        <span id="questionNum"></span>
+                                        <div id="question"></div>
+                                    </div>
+                                    <div class="option-container">
+                                        <button class="option" id="op1">option1</button>
+
+                                        <button class="option" id="op2">option2</button>
+
+                                        <button class="option" id="op3">option3</button>
+
+                                        <button class="option" id="op4">option4</button>
+                                    </div>
+                                    <div class="navigation">
+                                        <button class="evaluate hidden">Evaluate</button>
+                                        <button class="nextB button-primary">Next</button>
+                                        <button class="finish button-primary hidden">Perfundo</button>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section>
+                                <div class="scores hidden">
+                                    <h2> Pergjigjet e sakta: <span id="score"></span></h2>
+                                    <canvas id="myChart" style="height: 200px;"></canvas>
+                                </div>
+
+
+                                <h3>Get your certificate</h3>
+                                <label>Name:</label><input type="text" placeholder="name">
+                                <a href="#">Download</a>
+                                <canvas>
+
+                                </canvas>
+                            </section>
+                        </div>
 
 
 
 
+
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </main>
         <!--  -->
 
