@@ -1,6 +1,11 @@
 /* MAIN COLOR */
 /* #ee6001 */
 
+header {
+  z-index: 9999;
+  margin-bottom: 20px;
+}
+
 @font-face {
   font-family: 'neogrotesk_ess_altblack';
   src: url('/assets/fonts/neogroteskessalt-black-webfont.woff2') format('woff2'),

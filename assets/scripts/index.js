@@ -103,7 +103,7 @@ function showSlides(n) {
 // Dark / Light Mode
 function toggleDarkLight() {
   const fa_moon = document.querySelector('.fa-moon')
-  let DL = document.querySelector('#D-L');
+  let DL = document.querySelector('.D-L');
   var body = document.querySelector("#bodys");
   var currentClass = body.className;
   body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
