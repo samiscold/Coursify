@@ -1,3 +1,12 @@
+// Loader
+
+const fadeOut = () => {
+  const loaderWrapper = document.querySelector('.wrapper');
+  loaderWrapper.classList.add('fades');
+}
+
+window.addEventListener('load', fadeOut)
+
 
 let likeButton = document.querySelector('.fa-thumbs-up');
 // likeButton.style.color = "black";

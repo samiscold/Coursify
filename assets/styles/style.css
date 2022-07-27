@@ -23,7 +23,7 @@ body {
 .width-page {
   width: 85%;
   margin: 0 auto;
-  background:transparent;
+  background: transparent;
 }
 
 h1,
@@ -34,6 +34,51 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+/*  */
+/* Pre - Loader */
+/*  */
+
+.wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  transition: opacity 0.25s, visibility 1s;
+}
+
+.loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loader:after {
+  content: ' ';
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  border-radius: 40px;
+  border: 6px solid #ee6001;
+  border-color: #ee6001 transparent #ee6001 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fades {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* ******* */
@@ -254,7 +299,7 @@ button[disabled]:hover {
 }
 
 .buttons {
-  margin:20px auto !important;
+  margin: 20px auto !important;
 }
 
 .courseBtn {
@@ -465,13 +510,12 @@ main.dark-mode .expect-from-coursify {
   box-sizing: border-box;
 }
 
-
 .course-box span:before {
   content: '';
   position: absolute;
   width: 100%;
   height: 3px;
-  bottom:0;
+  bottom: 0;
   background: radial-gradient(
     circle,
     rgba(238, 96, 1, 1) 0%,
@@ -1216,19 +1260,18 @@ main {
   background-color: transparent;
 }
 
-
-.home-hero-section-first h1{
-  margin:0 !important;
-  padding:0;
+.home-hero-section-first h1 {
+  margin: 0 !important;
+  padding: 0;
 }
-.home-hero-section-first p{
-  margin:0 !important;
-  padding:0;
+.home-hero-section-first p {
+  margin: 0 !important;
+  padding: 0;
 }
 
-.home-hero-section-first .buttons{
-  margin:0 !important;
-  padding:0;
+.home-hero-section-first .buttons {
+  margin: 0 !important;
+  padding: 0;
 }
 
 .left {
@@ -1249,8 +1292,8 @@ main {
   margin: 0 !important;
 }
 
-.home-hero-section-first img{ 
-width: 300px;
+.home-hero-section-first img {
+  width: 300px;
 }
 
 .home-hero-section-first h1,
@@ -1516,7 +1559,6 @@ p,
 
 /* footer  */
 
-
 /* Error Page  */
 
 .error-page-section {
@@ -1527,10 +1569,9 @@ p,
   align-items: center;
   align-items: center;
   align-self: center;
- 
 }
 
-.content img { 
+.content img {
   width: 100px;
 }
 
@@ -1539,24 +1580,23 @@ p,
   justify-content: center;
   align-items: center;
   background-color: black;
-  color:white;
+  color: white;
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   width: 80vw;
   height: auto;
-  padding:20px;
+  padding: 20px;
   text-align: center;
 }
 
-
 .content h2 {
   font-size: 3rem;
-  color:white;
+  color: white;
 }
-.content h4{
-color:gray;
-font-size: 1rem;
+.content h4 {
+  color: gray;
+  font-size: 1rem;
 }
 
 .content p {
@@ -1564,10 +1604,9 @@ font-size: 1rem;
 }
 
 .content a {
-  color:white;
-  margin:10px;
+  color: white;
+  margin: 10px;
 }
-
 
 /* animation */
 
@@ -1608,9 +1647,10 @@ font-size: 1rem;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
-.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+.hvr-ripple-out:hover:before,
+.hvr-ripple-out:focus:before,
+.hvr-ripple-out:active:before {
   -webkit-animation-name: hvr-ripple-out;
   animation-name: hvr-ripple-out;
   animation-fill-mode: forwards;
 }
-
