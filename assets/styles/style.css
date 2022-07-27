@@ -50,7 +50,7 @@ h6 {
   transition: opacity 0.25s, visibility 1s;
 }
 
-/* .loader {
+.loader {
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -74,8 +74,8 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
-} */
-.lds-ripple {
+}
+/* .lds-ripple {
   display: inline-block;
   position: relative;
   width: 80px;
@@ -120,7 +120,7 @@ h6 {
     height: 72px;
     opacity: 0;
   }
-}
+} */
 
 .fades {
   opacity: 0;
