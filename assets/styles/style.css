@@ -981,7 +981,7 @@ body {
 .project-content h3,
 .project-content h6 {
   margin-left: 40px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .project-content span {
@@ -1176,7 +1176,6 @@ table tr td {
   background-size: 300%;
   background-position: 0% 100%;
 }
-
 
 .coursify-section-intro p {
   margin: 0;
@@ -1568,8 +1567,7 @@ main {
   padding: 50px 0;
 }
 
-.project-hero-section-first
-.buttons {
+.project-hero-section-first .buttons {
   width: 85%;
   margin: 0 auto;
 }
@@ -1578,8 +1576,6 @@ main {
   font-size: 2.5rem;
   margin-bottom: 1.2%;
 }
-
-
 
 .course-hero-section-first {
   width: 100%;
@@ -1775,12 +1771,11 @@ main {
   animation-fill-mode: forwards;
 }
 
-
 .widgets {
-  padding:20px;
+  padding: 20px;
   background: #f2f2f2;
   position: absolute;
-  top:50px;
+  top: 50px;
   border-radius: 5px;
   width: 100%;
   color: black;
@@ -1788,14 +1783,14 @@ main {
 
 .enroll-button {
   position: absolute;
-  top:30vh;
-  right:0;
-  border:none;
+  top: 30vh;
+  right: 0;
+  border: none;
   padding: 16px 32px;
   background: white;
   font-weight: bolder;
-  color:#c45002;
+  color: #c45002;
   margin: 2% 0;
-    margin-right: 0px;
+  margin-right: 0px;
   margin-right: 8%;
 }
