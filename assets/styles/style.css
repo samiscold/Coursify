@@ -515,6 +515,10 @@ main.dark-mode .expect-from-coursify {
   background-color: #555;
 }
 
+main.dark-mode .widgets h1, main.dark-mode .widgets p {
+  color: black !important;
+}
+
 /* ************ */
 /* Courses Card */
 /* ************ */
@@ -530,7 +534,6 @@ main.dark-mode .expect-from-coursify {
 .project > h3 {
   display: block;
   width: 100%;
-  margin-top: -100px;
   font-size: 30px;
   text-decoration: underline;
 }
