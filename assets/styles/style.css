@@ -516,7 +516,18 @@ main.dark-mode .expect-from-coursify {
 }
 
 main.dark-mode .widgets h1, main.dark-mode .widgets p {
-  color: black !important;
+  color: white !important;
+}
+
+main.dark-mode .widgets {
+  background: #333;
+}
+
+
+main.dark-mode button {
+  border-bottom: 1px solid white;
+  color: white;
+  background: #333;
 }
 
 /* ************ */
