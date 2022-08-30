@@ -64,7 +64,6 @@ function buttonContinue() {
 
 function showMenu(menu) {
   menu.classList.toggle('open');
-
 }
 
 // **********

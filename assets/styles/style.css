@@ -515,14 +515,14 @@ main.dark-mode .expect-from-coursify {
   background-color: #555;
 }
 
-main.dark-mode .widgets h1, main.dark-mode .widgets p {
+main.dark-mode .widgets h1,
+main.dark-mode .widgets p {
   color: white !important;
 }
 
 main.dark-mode .widgets {
   background: #333;
 }
-
 
 main.dark-mode button {
   border-bottom: 1px solid white;
