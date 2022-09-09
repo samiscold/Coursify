@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Coursify - Welcome</title>
+  </head>
+
+  <body>
+    <section id="intro-section" class="coursify-section-intro">
+      <h1>COURSIFY</h1>
+      <p>Learn latest technologies and adapt to the market.</p>
+      <button onclick="buttonContinue()">Log In</button>
+
+      <div class="intro-footer">
+        <div class="text-top">
+          <div>
+            <span>Made with ☕ and 🖤 Samir & Edon </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <script>
+    function buttonContinue() {
+  let x = document.getElementById("intro-section");
+  x.style.transform = 'translate(0,-100%)'
+  x.style.transition = "1s"
+  setTimeout(function () { window.location = "login.html"; }, 1100);
+}
+  </script>
+
+
+</body>
+</html>

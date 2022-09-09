@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="stylesheet" href="assets/styles/style-responsive.css" />
+  <link rel="stylesheet" href="assets/styles/logs.css" />
+  <title>Coursify - Login - Signup</title>
+</head>
+
+<body>
+
+  <section  class="coursify-login-section">
+
+  <div id="container">
+    <div id="tabs">
+      <p id="loginTab" class="tabs" onclick="loginTabFun()">Login</p>
+      <p id="registerTab" class="tabs" onclick="regTabFun()">Register</p>
+
+      <div id="clear"></div>
+    </div>
+
+    <div id="cont">
+      <div id="login" class="forms">
+        <h3>Login</h3>
+
+        <input id="log-email" type="email" placeholder="Username" required />
+        <input id="log-password" type="password" placeholder="Password" required />
+        <input type="submit" onclick="login()" value="Submit" />
+
+        <!-- <p onclick="forTabFun()">Forget Password?</p> -->
+      </div>
+
+      <div id="register" class="forms">
+        <h3>Register</h3>
+
+        <input id="username-register" type="email" placeholder="Username" required />
+        <input id="password-register" type="password" placeholder="Password" required />
+        <input id="repet-password-register" type="password" placeholder="Re write Password" required />
+        <input type="submit" onclick="register()" value="Submit" />
+      </div>
+      <div id="forgot" class="forms">
+        <h3>Forgot Password</h3>
+        <div>
+          <input id="forgoten-email" type="email" placeholder="Email" required />
+          <input type="submit" onclick="forgot()" value="Submit" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <label id="errorMess"></label>
+  </section>
+
+
+  <script src="assets/scripts/logs.js"></script>
+</body>
+
+</html>

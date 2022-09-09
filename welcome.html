@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/style-responsive.css">
+  <title>Coursify - Learn new skills everyday</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.69/build/runtime.js"
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <body onload="fadeOut()">
+
+    <div class="wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <header>
+      <nav class="menu-bar width-page" id="myTopnav">
+        <div class="brand-logo">
+          <a href="welcome.html">COURSIFY</a>
+        </div>
+        <div class="menus">
+          <ul>
+            <li><a href="courses.html">Courses</a> </li>
+            <li><a href="projects.html">Projects</a> </li>
+
+
+
+          </ul>
+        </div>
+
+        <div class="user">
+          <svg class="wave" id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+            <path id="Line_1" class="t Line_1" data-name="Line 1"
+              d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z" />
+            <path id="Line_2" class="t Line_2" data-name="Line 2"
+              d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z" />
+            <path id="Line_3" class="t Line_3" data-name="Line 3"
+              d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z" />
+            <path id="Line_4" class="t Line_4" data-name="Line 4"
+              d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z" />
+            <path id="Line_5" class="t Line_5" data-name="Line 5"
+              d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z" />
+            <path id="Line_6" class="t Line_6" data-name="Line 6"
+              d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z" />
+            <path id="Line_7" class="t Line_7" data-name="Line 7"
+              d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z" />
+            <path id="Line_8" class="t Line_8" data-name="Line 8"
+              d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z" />
+            <path id="Line_9" class="t Line_9" data-name="Line 9"
+              d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z" />
+          </svg>
+          <p>
+            <i class="fa fa-user"></i>
+            Welcome,
+            <label class="username" id="username">
+              <script>
+                var user = sessionStorage.getItem('username');
+                document.getElementById('username').innerHTML = user;
+              </script>
+            </label>
+            <button type="button" class="dark-light" name="dark_light" onclick="toggleDarkLight()"
+              title="Toggle dark/light mode">
+              <span class="D-L">Light</span>
+              <i class="fa fa-moon"></i>
+            </button>
+          </p>
+
+
+
+        </div>
+
+
+
+
+        <nav class="hamburger-icon" onclick="showMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <nav class="respo-menus">
+            <ul>
+              <li><a href="courses.html">Courses</a> </li>
+              <li><a href="projects.html">Projects</a> </li>
+              <li>
+                <button type="button" class="dark-light" name="dark_light" onclick="toggleDarkLight()"
+                  title="Toggle dark/light mode">
+                  <span class="D-L">Light</span>
+                  <i class="fa fa-moon"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </nav>
+      </nav>
+    </header>
+    <main id="bodys" class="light-mode">
+
+
+
+      <div class="width-page">
+
+        <section class="home-hero-section-first">
+
+
+          <div class="left">
+            <h1>Skyrocket your career with us</h1>
+            <p>Join the greatest online programming community to learn <br>from industry experts. </p>
+            <div class="buttons">
+              <a href="courses.html">
+                <button class="button-primary">View courses</button>
+              </a>
+            </div>
+          </div>
+          <img src="/assets//videos/puzzle-come-back-later.gif" alt="">
+
+
+
+
+
+        </section>
+      </div>
+
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+          <div class="width-page">
+
+            <div class="widgets">
+
+
+              <h1>Computer Science</h1>
+              <p>What Is Computer Science? What Do You Learn? Learn All About the Basics: a course delving into what CS
+                is and everything that you need to know</p>
+            </div>
+
+            <a href="courses.html">
+              <button class="enroll-button">Enroll now</button>
+            </a>
+          </div>
+
+
+          <img src="assets/images/tz.webp" style="width:100%">
+        </div>
+
+
+
+        <div class="mySlides fade">
+          <div class="width-page">
+
+            <div class="widgets">
+
+
+              <h1>Design & Arts</h1>
+              <p>Design & Arts -The Four Fundamental Parts: A blog with a breakdowns of the four core fundamental parts
+                of Design & Art.</p>
+            </div>
+
+            <a href="courses.html">
+              <button class="enroll-button">Enroll now</button>
+            </a>
+          </div>
+
+          <img src="assets/images/tz.webp" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+          <div class="width-page">
+
+            <div class="widgets">
+
+
+              <h1>Marketing & Business</h1>
+              <p>How the internet has changed marketing and what you need to know: a course about how marketing has
+                changed due to the internet.</p>
+            </div>
+
+            <a href="courses.html">
+              <button class="enroll-button">Enroll now</button>
+            </a>
+
+          </div>
+
+          <img src="assets/images/tz.webp" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      </section>
+
+
+      <section class="courses width-page">
+        <h3>Learn by doing</h3>
+        <h4>
+          Get access to the best online courses for creatives. Interact with the top professionals and discover the
+          creative world's best-kept secrets.
+        </h4>
+
+        <div class="course-box hvr-ripple-out">
+          <span class="animated"></span>
+          <span class="animated"></span>
+          <span class="animated"></span>
+          <span class="animated"></span>
+          <div class="image">
+            <label class="feature">NEW</label>
+            <img src="assets/images/course-betim-picture.webp" alt="" srcset="">
+            <a href="coursesPage.html">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+          <div class="title">
+            <h3>Web MultiMedia</h3>
+            <h6>By Betim Gashi</h6>
+          </div>
+          <div class="desc">
+            <p>
+              This course is designed to equip students with the specialist skills to build industry-standard websites
+              using images, videos, graphics and more!
+            </p>
+          </div>
+          <div class="student">
+            <i class="fa fa-user"></i>
+            300
+            <i class="fa fa-thumbs-up"></i>
+            300
+          </div>
+          <div class="start-learning">
+            <a href="coursesPage.html">
+              <button>Start Learning</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="course-box opacity">
+          <div class="lock"></div>
+          <div class="image">
+            <label class="feature">NEW</label>
+            <img src="assets/images/css-logo.webp" alt="" srcset="">
+            <a href="">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+          <div class="title">
+            <h3>CSS</h3>
+            <h6>By Samir Vllaqo</h6>
+          </div>
+          <div class="desc">
+            <p>
+              Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
+              written in HTML or XML (including XML dialects such as SVG, MathML or XHTML).
+            </p>
+          </div>
+          <div class="student">
+            <i class="fa fa-user"></i>
+            300
+            <i class="fa fa-thumbs-up"></i>
+            300
+          </div>
+          <div class="start-learning">
+            <a href="coursesPage.html">
+              <button>Start Learning</button>
+            </a>
+          </div>
+        </div>
+        <div class="course-box opacity">
+          <div class="lock"></div>
+          <div class="image">
+            <label class="feature">NEW</label>
+            <img src="assets/images/1_6ahbWjp_g9hqhaTDSJOL1Q.webp" alt="" srcset="">
+            <a href="">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+          <div class="title">
+            <h3>JavaScript</h3>
+            <h6>By Edon Abdullahu</h6>
+          </div>
+          <div class="desc">
+            <p>
+              JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with
+              first-class functions
+            </p>
+          </div>
+          <div class="student">
+            <i class="fa fa-user"></i>
+            300
+            <i class="fa fa-thumbs-up"></i>
+            300
+          </div>
+          <div class="start-learning">
+            <a href="coursesPage.html">
+              <button>Start Learning</button>
+            </a>
+          </div>
+        </div>
+        <div class="course-box opacity">
+          <div class="lock"></div>
+          <div class="image">
+            <label class="feature">NEW</label>
+            <img src="assets/images/wp8661113.webp" alt="" srcset="">
+            <a href="">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+          <div class="title">
+            <h3>Python</h3>
+            <h6>By Samir Vllaqo</h6>
+          </div>
+          <div class="desc">
+            <p>
+              Python is a high-level, interpreted, general-purpose programming language. Its design philosophy
+              emphasizes code readability with the use of significant indentation. Python is dynamically-typed and
+              garbage-collected
+            </p>
+          </div>
+          <div class="student">
+            <i class="fa fa-user"></i>
+            300
+            <i class="fa fa-thumbs-up"></i>
+            300
+          </div>
+          <div class="start-learning">
+            <a href="coursesPage.html">
+              <button>Start Learning</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <a class="viewAll" href="courses.html">
+        <button class="button-primary">View All</button>
+      </a>
+
+
+      <section class="expect-from-coursify width-page ">
+
+        <div class="width">
+          <h1>What to expect from a Corsify course</h1>
+          <div class="col-2">
+
+
+            <div class="efc-1">
+
+              <div class="efc">
+                <i class="fa fa-smile"></i>
+                <div class="text">
+                  <h4>Learn at your own pace</h4>
+                  <p>Enjoy learning from home without a set schedule and with an easy-to-follow method. You set your own
+                    pace.</p>
+                </div>
+              </div>
+              <div class="efc">
+                <i class="fa fa-thumbs-up"></i>
+                <div class="text">
+                  <h4>Learn from the best professionals</h4>
+                  <p>Learn valuable methods and techniques explained by top experts in the creative sector.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="efc-2">
+              <div class="efc">
+                <i class="fa fa-laptop"></i>
+                <div class="text">
+                  <h4>Get front-row seats</h4>
+                  <p>Videos of the highest quality, so you don't miss a single detail. With unlimited access, you can
+                    watch them as many times as you need to perfect your technique.</p>
+                </div>
+              </div>
+              <div class="efc">
+                <i class="fa fa-users"></i>
+                <div class="text">
+                  <h4>Share knowledge and ideas</h4>
+                  <p>Ask questions, request feedback, or offer solutions. Share your learning experience with other
+                    students in the community who are as passionate about creativity as you are.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <!-- Project -->
+      <section class="main">
+        <section class="course-hero-section-first">
+          <section class="project width-page">
+            <h3>Projects</h3>
+            <div class="project-box course-box">
+              <img src="assets/images/maxresdefault.webp" alt="" srcset="">
+              <div class="project-content">
+                <h3>
+                  <a href="coursesPage.html">Calculator</a>
+                </h3>
+                <div>
+                  <h6>By: <span>Edon Abdullahu</span></h6>
+                </div>
+                <div class="btn-center">
+                  <a href="coursesPage.html">
+                    <button class="project-btn">See The Project</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-box course-box">
+              <img src="assets/images/9b678951c735081f49ed72ad21874cb3.webp" alt="" srcset="">
+              <div class="project-content">
+                <h3>
+                  <a href="coursesPage.html">Tic Tac</a>
+                </h3>
+                <div>
+                  <h6>By: <span>Samir Vllaco</span></h6>
+                </div>
+                <div class="btn-center">
+                  <a href="coursesPage.html">
+                    <button class="project-btn">See The Project</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-box course-box">
+              <img src="assets/images/pure-css-to-do-list-with-checkbox.webp" alt="" srcset="">
+              <div class="project-content">
+                <h3>
+                  <a href="coursesPage.html">To Do List</a>
+                </h3>
+                <div>
+                  <h6>By: <span>Edon Abdullahu</span></h6>
+                </div>
+                <div class="btn-center">
+                  <a href="coursesPage.html">
+                    <button class="project-btn">See The Project</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-box course-box">
+              <img src="assets/images/login-form-3-beautiful-css-forms.webp" alt="" srcset="">
+              <div class="project-content">
+                <h3>
+                  <a href="coursesPage.html">Login / Signup</a>
+                </h3>
+                <div>
+                  <h6>By: <span>Samir Vllaco</span></h6>
+                </div>
+                <div class="btn-center">
+                  <a href="coursesPage.html">
+                    <button class="project-btn">See The Project</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <a class="viewAll" href="projects.html">
+          <button class="btn-right button-primary">View All</button>
+        </a>
+    </main>
+
+    <canvas id="canvas3d"></canvas>
+    <footer>
+
+      <div class="row">
+        <div class="brand-logo">
+          <a href="welcome.html">COURSIFY</a>
+        </div>
+
+        <center>
+          <span>Made with ☕ and 🖤 by Samir & Edon </span>
+        </center>
+
+        <div class="breaker"></div>
+        <li><a href="courses.html">Courses</a> </li>
+        <li><a href="projects.html">Projects</a> </li>
+
+
+      </div>
+
+      </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="node_modules/howler/dist/howler.min.js"></script>
+    <script>
+      var sound = new Howl({
+        src: ['audios/music.mp3']
+      });
+    </script>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script src="https://kit.fontawesome.com/cdf60cb5fd.js" crossorigin="anonymous"></script>
+    <script type="module" src="assets/scripts/webgl.js"></script>
+    <script src="assets/scripts/howler.js"></script>
+    <script src="assets/scripts/index.js"></script>
+    <script src="assets/scripts/logs.js"></script>
+  </body>
+
+</html>
